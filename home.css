@@ -1,0 +1,993 @@
+body,html,h1,h2,h3,h4,li,img,p{
+
+	padding: 0 0 0 0;
+	margin: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+
+}
+body{
+
+
+	width: 1300px;
+	margin: 0 auto 0 auto;
+
+}
+.header{
+
+	margin: 30px 5px 5px 5px;
+	float: left;
+	height: 140px;
+	width: 500px;
+
+	
+}
+.description p{
+	font-size: 15px; 
+	font-family: lato,helvetica,verdana;
+	line-height: 1.5;
+	margin: 20px 0 20px 0;
+
+}
+.nav li{
+	display: inline;
+
+}
+.description img{
+	margin: 10px;
+
+}
+.description .website{
+	height: 300px;
+
+}
+.description .website img{
+	height: 300px;
+	width: 150px;
+}
+.description .mission li{
+	font-size: 15px; 
+	font-family: lato,helvetica,verdana;
+
+}
+.description h1{
+	font-size: 45px;
+	margin: 20px 0px 0px 0;
+	font-family: "Times New Roman",droid-serif;
+	font-weight: normal;
+	text-decoration: underline;
+
+}
+
+}
+h1{
+	font-size: 45px;
+	margin: 20px 0px 0px 0;
+	font-family: "Times New Roman",droid-serif;
+	font-weight: normal;
+	text-decoration: underline;
+}
+main{
+
+}
+.nav{
+	margin: 95px 30px 5px 0px;
+	width: 725px;
+	float: right;
+	height: 75px;
+	font-family: rockwell,coustard,patuaone,geometrcic-sans-serif;
+	font-size: 24px;
+	color: #ff0000;
+
+
+	
+}
+.nav a{
+	margin: 0 0 0 0;
+	padding: 5px 20px 5px 20px;
+	color: #ffffff;
+
+
+	border-radius: 10px;
+}
+.main{
+	color: #ffffff;
+	background: url(images/shutter1.jpg);
+
+	background-color: hsl(360,10%,76%);
+}
+.description{
+	color: #ffffff;
+	background: url(images/shutter1.jpg);
+
+	padding: 10px 10px 10px 30px;
+	margin: 60px 110px 10px 10px;
+	width: 800px;
+	float: right;
+
+}
+.clear{
+	clear: both;
+}
+.description img{
+	float: right;
+}
+
+.work{
+	
+	margin: 5px;
+}
+h2{
+	margin: 0px 0px 10px 0px;
+	font-family: "Times New Roman",droid-serif;
+	font-weight: normal;
+	text-decoration: underline;
+	font-size: 25px;
+		
+
+}
+.vnav{
+	color: #ffffff;
+	background: url(images/shutter1.jpg);
+	clear: both;
+
+	width: 200px;
+	font-size: 24px;
+	float: left;
+	text-align: center;
+	margin: 60px 10px 10px 30px;
+	padding: 0 35px 0 0;
+
+
+}
+.vnav li{
+	padding: 5px 10px 5px 10px;
+
+	width: 120px;
+	margin: 10px auto 10px auto;
+	border-radius: 10px;
+
+}
+.vnav a{
+	color: #ffffff;
+}
+.vnav ul{
+	list-style: none;
+}
+
+.clear{
+	clear: both;
+}
+.colleges img{
+	width: 100px;
+	height: 100px;
+}
+.colleges{
+	background: url(images/window5.jpg) top left repeat;
+
+	padding: 10px 10px 10px 30px;
+	margin: 60px 110px 10px 10px;
+	width: 800px;
+	float: right;
+}
+
+.gs{
+
+	background: url(images/gslogo.jpg) center no-repeat; 
+	display: block;
+	height: 200px;
+	width: 200px;
+	text-indent: -99999px;
+	margin: 25px 0 25px 30px;
+	border-radius: 100px;
+}
+.iet{
+
+	background: url(images/ietlogo.png) center no-repeat; 
+	display: block;
+	height: 200px;
+	width: 200px;
+	text-indent: -99999px;
+	border-radius: 100px;
+	margin: 25px 0 25px 75px;
+}
+.medicaps{
+
+	background: url(images/medicapslogo.jpg) center no-repeat; 
+	display: block;
+	height: 160px;
+	width: 200px;
+	text-indent: -99999px;
+	margin: 45px 0 45px 30px;
+	border-top-right-radius: 100px;
+	border-top-left-radius: 100px;
+}
+.bit{
+
+	background: url(images/bitlogo.jpg) top left no-repeat; 
+	display: block;
+	height: 200px;
+	width: 200px;
+	text-indent: -99999px;
+	margin: 25px 0 25px 75px;
+	border-top-right-radius: 100px;
+	border-top-left-radius: 100px;
+}
+.g{
+
+width: 300px;
+float: left;
+height: 250px;
+margin: 0 40px 0 50px;
+}
+.i{
+
+width: 300px;
+float: left;
+height: 250px;
+margin: 0 40px 0 40px; 
+}
+.m{
+
+width: 300px;
+float: left;
+height: 250px;
+margin: 0 40px 0 50px;
+}
+.gs:hover{
+	margin-top: 15px;
+}
+.iet:hover{
+	margin-top: 15px;
+}
+.medicaps:hover{
+	margin-top: 35px;
+}
+.bit:hover{
+	margin-top: 15px;
+}
+
+.b{
+
+	width: 300px;
+	float: left;
+	height: 250px;
+	margin: 0 40px 0 40px;
+}
+.about{
+	color: #ffffff;
+	background: url(images/shutter1.jpg);
+
+	padding: 10px 10px 10px 30px;
+	margin: 60px 110px 10px 10px;
+	width: 800px;
+	float: right;
+
+}
+.website{
+	color: #ffffff;
+	background: url(images/shutter1.jpg);
+
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+
+}
+.mission{
+	color: #ffffff;
+	background: url(images/shutter1.jpg);
+
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+}
+.mission p{ 
+	font-size: 15px; 
+	font-family: lato,helvetica,verdana;
+	line-height: 1.5;
+	margin: 20px 0 20px 0;
+}
+.website p{ 
+	font-size: 15px; 
+	font-family: lato,helvetica,verdana;
+	line-height: 1.5;
+	margin: 20px 0 20px 0;
+}
+.about h1{
+
+	margin: 5px 0px 0px 0;
+
+}
+.website img{
+	float: right;
+	width: 200px;
+	height: 200px;
+}
+.mission img{
+	float: left;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px; 
+}
+.arpit img{
+	width: 190px;
+	height: 220px;
+	margin: 0 70px 0px 0;
+	border-radius: 5px;
+	 
+
+}
+.srijan img{
+	width: 190px;
+	height: 220px;
+	margin: 0 70px 0px 0;
+	border-radius: 5px;
+	
+
+}
+.arpit{
+
+	width: 300px;
+	float: right;
+	margin: 10px 70px 10px 40px;
+	text-align: center;
+
+
+}
+.srijan{
+
+	width: 300px;
+	height: 350px;
+	float: right;
+	margin: 10px 40px 10px 40px;
+	text-align: center;
+
+}
+.team h2,h1{
+	margin-right: 80px;
+	color: #ffffff;
+}
+.team{
+	background: url(images/window3.jpg) left repeat;
+
+	padding: 10px 10px 10px 30px;
+	margin: 60px 110px 10px 10px;
+	width: 800px;
+	float: right;
+
+
+}
+
+.arpit .qlogo{
+	background: url(images/quoralogo.png) left top no-repeat; 
+	display: block;
+	height: 40px;
+	width: 40px;
+	border-radius: 5px;
+	text-indent: -9999px;
+	margin : 5px 5px 5px 5px;
+	float: left;
+
+}
+.arpit .inlogo{
+	background: url(images/instalogo.png) left top no-repeat; 
+	display: block;
+	height: 40px;
+	width: 40px;
+	text-indent: -9999px;
+	margin : 5px 5px 5px 5px;
+	float: left;
+	border-radius: 5px;
+
+}
+.arpit .fblogo{
+	background: url(images/fblogo.png) left top no-repeat; 
+	display: block;
+	height: 40px;
+	width: 40px;
+	text-indent: -9999px;
+	float: left;
+	margin : 5px 5px 5px 5px;
+	border-radius: 5px;
+
+}
+.alogo{
+
+	width: 150px;
+	margin: 0px 0 0px 40px;
+}
+.srijan .qlogo{
+	background: url(images/quoralogo.png) left top no-repeat; 
+	display: block;
+	height: 40px;
+	width: 40px;
+	text-indent: -9999px;
+	margin : 5px 5px 5px 5px;
+	float: left;
+	border-radius: 5px;
+
+}
+.srijan .inlogo{
+	background: url(images/instalogo.png) left top no-repeat; 
+	display: block;
+	height: 40px;
+	width: 40px;
+	text-indent: -9999px;
+	margin : 5px 5px 5px 5px;
+	float: left;
+	border-radius: 5px;
+
+}
+.srijan .fblogo{
+	background: url(images/fblogo.png) left top no-repeat; 
+	display: block;
+	height: 40px;
+	width: 40px;
+	text-indent: -9999px;
+
+	float: left;
+	margin : 5px 5px 5px 5px;
+	border-radius: 5px;
+	transition: all 0.05;
+
+}
+.slogo{
+
+	width: 150px;
+	margin: 0px 0 0px 40px;
+}
+.srijan .fblogo:hover,.srijan .fblogo:focus{
+	margin-top: 0px;
+}
+.srijan .inlogo:hover,.srijan .inlogo:focus{
+	margin-top: 0px;
+}
+.srijan .qlogo:hover,.srijan .qlogo:focus{
+	margin-top: 0px;
+}
+.arpit .fblogo:hover,.arpit .fblogo:focus{
+	margin-top: 0px;
+}
+.arpit .inlogo:hover,.arpit .inlogo:focus{
+	margin-top: 0px;
+}
+.arpit .qlogo:hover,.arpit .qlogo:focus{
+	margin-top: 0px;
+}
+.year{
+	background: url(images/window2.jpg) left repeat;	
+
+	padding: 0px 10px 10px 30px;
+	margin: 60px 110px 10px 10px;
+	width: 800px;
+	float: right;
+}
+.year h1{
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+.one{
+
+	width: 300px;
+	float: left;
+	height: 300px;
+	margin: 0 55px 0 35px;
+}
+.two{
+
+	width: 300px;
+	float: left;
+	height: 300px;
+	margin: 0 25px 0 65px;
+}
+.onelogo{
+
+	background: url(images/1st.jpg) center no-repeat; 
+	display: block;
+	height: 250px;
+	width: 150px;
+	text-indent: -99999px;
+	margin: 25px auto 35px auto;
+
+}
+.twologo{
+
+	background: url(images/2nd.jpg) center no-repeat; 
+	display: block;
+	height: 250px;
+	width: 150px;
+	text-indent: -99999px;
+	margin: 25px auto 35px auto;
+	border-radius: 10px;
+
+}
+.onelogo:hover{
+	margin-top: 10px;
+}
+.twologo:hover{
+	margin-top: 10px;
+}
+.branch{
+	background: url(images/shutter.jpg) top no-repeat;
+
+	padding: 0px 10px 10px 30px;
+	margin: 60px 110px 10px 10px;
+	width: 800px;
+	float: right;
+	color: #ffffff;
+}
+.branch li{
+    padding: 1px;
+	margin: 13px 10px 10px 20px;
+	color: #ffffff;
+}
+.branch a{
+	color: white;
+}
+.branch h1{
+	margin-bottom: 58px;
+}
+.subject li{
+	padding: 1px;
+	margin: 14px 10px 0px 20px;
+	color: #ffffff;
+}
+.subject h2{
+		color: #ffffff;
+
+}
+.branch h2{
+	color: #ffffff;
+}
+.subject{
+	background: url(images/shutter.jpg) top no-repeat;
+
+	padding: 115px 10px 10px 30px;
+	margin: 60px 110px 10px 10px;
+	width: 800px;
+	float: right;
+}
+.books{
+
+	padding: 10px 10px 10px 0px;
+	margin: 60px 110px 10px 10px;
+	width: 800px;
+	float: right;
+	height: 530px;
+	background: url(images/rack.jpg);
+}
+.thareja{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 20px 0 80px;
+
+}
+.tharejabook{
+
+	background: url(images/cree.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.tharejabook:hover{
+	margin-top: 15px;
+
+}
+.letusc{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 20px 0 20px;
+
+}
+.letuscbook{
+
+	background: url(images/letusc.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.letuscbook:hover{
+	margin-top: 15px;
+
+}
+.balaguru{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 20px 0 20px;
+
+}
+.balagurubook{
+
+	background: url(images/Ebala.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.balagurubook:hover{
+	margin-top: 15px;
+
+}
+.state{
+
+		float: left;
+		margin: 100px 0 0 100px;
+
+}
+.martin{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 200px 0 300px;
+
+}
+.martinbook{
+
+	background: url(images/wren.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.martinbook:hover{
+	margin-top: 15px;
+}
+.grewal{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 20px 0 80px;
+
+}
+.grewalbook{
+
+	background: url(images/bsgrewal.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.grewalbook:hover{
+	margin-top: 15px;
+
+}
+.grewal2{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 20px 0 20px;
+
+}
+.grewal2book{
+
+	background: url(images/grewal2.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.grewal2book:hover{
+	margin-top: 15px;
+
+}
+.erwin{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 20px 0 20px;
+
+}
+.erwinbook{
+
+	background: url(images/erwin.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.erwinbook:hover{
+	margin-top: 15px;
+
+}
+.jain{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 200px 0 300px;
+
+}
+.jainbook{
+
+	background: url(images/jain.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.jainbook:hover{
+	margin-top: 15px;
+}
+.rajput{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 70px 0 120px;
+
+}
+.rajputbook{
+
+	background: url(images/rkrajputthermo.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.rajputbook:hover{
+	margin-top: 15px;
+
+}
+.nag{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 20px 0 70px;
+
+}
+.nagbook{
+
+	background: url(images/pknag.jpg) top no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.nagbook:hover{
+	margin-top: 15px;
+
+}
+.workmanual{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 20px 0 80px;
+
+}
+.workmanualbook{
+
+	background: url(images/workshopmanual.jpeg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.workmanualbook:hover{
+	margin-top: 15px;
+
+}
+.workintro{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 20px 0 20px;
+
+}
+.workintrobook{
+
+	background: url(images/workshopintro.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.workintrobook:hover{
+	margin-top: 15px;
+
+}
+.pnrao{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 20px 0 20px;
+
+}
+.pnraobook{
+
+	background: url(images/pnrao.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.pnraobook:hover{
+	margin-top: 15px;
+
+}
+.khurmi{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 200px 0 300px;
+
+}
+.khurmibook{
+
+	background: url(images/khurmi.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.khurmibook:hover{
+	margin-top: 15px;
+}
+.theraja{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 200px 0 300px;
+
+}
+.therajabook{
+
+	background: url(images/bltheraja.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.therajabook:hover{
+	margin-top: 15px;
+}
+.mbshah{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 70px 0 120px;
+
+}
+.mbshahbook{
+
+	background: url(images/mbshah.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.mbshahbook:hover{
+	margin-top: 15px;
+
+}
+.venkata{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 20px 0 70px;
+
+}
+.venkatabook{
+
+	background: url(images/kvenkata.jpg) top no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.venkatabook:hover{
+	margin-top: 15px;
+
+}
+.johnbird{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 70px 0 120px;
+
+}
+.johnbirdbook{
+
+	background: url(images/johnbird.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.johnbirdbook:hover{
+	margin-top: 15px;
+
+}
+.boylestad{
+
+	width: 200px;
+	float: left;
+	height: 260px;
+	margin: 20px 20px 0 70px;
+
+}
+.boylestadbook{
+
+	background: url(images/boylestad.jpg) top no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 25px auto 0px auto;
+
+}
+.boylestadbook:hover{
+	margin-top: 15px;
+
+}
+.books h1{
+	text-align: center;
+}
+h1{
+	font-size: 45px;
+	margin: 20px 0px 0px 0;
+	font-family: "Times New Roman",droid-serif;
+	font-weight: normal;
+	text-decoration: underline;	
+}
+.footer{
+
+	height: 200px;
+    background: url(images/shutter1.jpg);
+    border: 1px solid #000000;
+}
