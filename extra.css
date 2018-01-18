@@ -36,7 +36,6 @@ ul{
 	width: 100%;
 
 }
-
 @media (max-width: 500px)
 {
 
@@ -558,7 +557,7 @@ h2{
 
 }
 .buybooks:hover{
-	background-position: -300px 0;
+	background-position: -200px 0;
 }
 .sb{
 	width: 45%;
@@ -584,7 +583,7 @@ h2{
 
 }
 .sellbooks:hover{
-	background-position: 0 -300px;
+	background-position: 0 -230px;
 }
 .at{
 	width: 45%;
@@ -599,7 +598,7 @@ h2{
 	width: 200px;
 	height: 230px;
 	border: 1px solid #000000;
-	background: url(images/buy.jpg) left no-repeat;
+	background: url(images/attach.jpg) left no-repeat;
 	display: block;
 	float: left;
 	text-indent: 300px;
@@ -609,7 +608,7 @@ h2{
 
 }
 .attach:hover{
-	background-position: -300px 0;
+	background-position: -200px 0;
 }
 .pc{
 	width: 45%;
@@ -624,7 +623,7 @@ h2{
 	width: 200px;
 	height: 230px;
 	border: 1px solid #000000;
-	background: url(images/buy.jpg) left no-repeat;
+	background: url(images/pcard.jpg)  no-repeat;
 	display: block;
 	float: left;
 	text-indent: 300px;
@@ -633,7 +632,7 @@ h2{
 	border-radius: 10px;
 }
 .profixcard:hover{
-	background-position: -300px 0;
+	background-position: 0 -230px;
 }
 .services a{
 	font-size: 24px;
@@ -659,14 +658,14 @@ h2{
 	width: 120px;
 	height: 140px;
 	border: 1px solid #000000;
-	background: url(images/buy.jpg) left no-repeat;
+	background: url(images/buy1.jpg) left no-repeat;
 
 	display: block;
 		float: left;
 
 	text-indent: 150px;
 	margin: 5px;
-	transition: all 0.5s 0.2s;
+	transition: all 0.01s 0.2s;
 	border-radius: 10px;
 
 }
@@ -685,14 +684,14 @@ h2{
 	width: 120px;
 	height: 140px;
 	border: 1px solid #000000;
-	background: url(images/sell.jpg) top no-repeat;
+	background: url(images/sell1.jpg) top no-repeat;
 
 	display: block;
 		float: left;
 		margin: 5px;
 	text-indent: 150px;
 
-	transition: all 0.5s 0.2s;
+	transition: all 0.01s 0.2s;
 	border-radius: 10px;
 
 }
@@ -712,12 +711,12 @@ h2{
 	width: 120px;
 	height: 140px;
 	border: 1px solid #000000;
-	background: url(images/buy.jpg) left no-repeat;
+	background: url(images/attach1.jpg) left no-repeat;
 	display: block;
 	float: left;
 	text-indent: 150px;
 	margin: 5px;
-	transition: all 0.5s 0.2s;
+	transition: all 0.01s 0.2s;
 	border-radius: 10px;
 
 }
@@ -737,16 +736,16 @@ h2{
 	width: 120px;
 	height: 140px;
 	border: 1px solid #000000;
-	background: url(images/buy.jpg) left no-repeat;
+	background: url(images/pcard1.jpg) no-repeat;
 	display: block;
 	float: left;
 	text-indent: 150px;
 	margin: 5px;
-	transition: all 0.5s 0.2s;
+	transition: all 0.01s 0.2s;
 	border-radius: 10px;
 }
 .profixcard:hover{
-	background-position: -300px 0;
+	background-position: 0 -140px;
 }
 .services a{
 	font-size: 15px;
@@ -1161,7 +1160,7 @@ background-color: white;
     border: none;
     cursor: pointer;
 		margin: 15px;
-		width: 350px;
+		width: 300px;
 }
 
 .dropdown {
@@ -1403,13 +1402,18 @@ background-color: white;
 .tc ol{
 	margin: 20px;
 }
+.dark{
+
+	background-color: ;
+
+}
 @media (max-width: 500px)
 {
 	.pcondition{
 	float: none;
 	margin: 10px auto 10px auto;
 	width: 95%;
-	height: 310px;
+	height: 350px;
 	border: 1px solid #000000;
 	border-radius: 10px;
 	background-color: white;
@@ -1419,7 +1423,7 @@ background-color: white;
 	float: none;
 	margin: 10px auto 10px auto;
 	width: 95%;
-	height: 480px;
+	height: 530px;
 	border: 1px solid #000000;
 	border-radius: 10px;
 	background-color: white;
@@ -1470,4 +1474,473 @@ background-color: white;
 	font-size: 45px;
 	text-align: center;
 	text-decoration: none;
+}
+
+.sem a{
+	background-color: hsl(280,30%,60%);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+		margin: 15px auto 15px auto;
+		width: 500px;
+
+}
+
+@media (max-width: 500px)
+{
+	.sem1{
+	float: none;
+	margin: 10px auto 10px auto;
+	width: 95%;
+
+	border: 1px solid #000000;
+	border-radius: 10px;
+	background-color: white;
+
+}
+.sem2{
+	float: none;
+	margin: 10px auto 10px auto;
+	width: 95%;
+
+	border: 1px solid #000000;
+	border-radius: 10px;
+	background-color: white;
+
+}
+.sem h1{
+	font-size: 30px;
+	text-align: center;
+}
+.sem a{
+ background-color: hsl(280,30%,60%);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+		margin: 15px;
+		width: 295px;}
+
+}
+.books{
+	border: 1px solid #000000;
+
+}
+.ramanna{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+.ramannabook{
+	border: 1px solid #000000;
+	background: url(images/ramanna.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	margin: 10px auto 10px auto;
+
+
+}
+.grewal1{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+.grewal1book{
+	border: 1px solid #000000;
+	background: url(images/grewal2.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
+}
+.malik{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 37% 40px 37%;
+
+}
+.malikbook{
+	border: 1px solid #000000;
+	background: url(images/malik.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
+}
+.ssdara{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+.ssdarabook{
+	border: 1px solid #000000;
+	background: url(images/ssdara.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	margin: 10px auto 10px auto;
+
+
+}
+.jain{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+.jainbook{
+	border: 1px solid #000000;
+	background: url(images/jain.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
+}
+.shashi{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 37% 40px 37%;
+
+}
+.shashibook{
+	border: 1px solid #000000;
+	background: url(images/shashi.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
+}
+.deltoro{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+.deltorobook{
+	border: 1px solid #000000;
+	background: url(images/deltoro.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	margin: 10px auto 10px auto;
+
+
+}
+.mittal{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+.mittalbook{
+	border: 1px solid #000000;
+	background: url(images/mittal.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
+}.nagrath{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+.nagrathbook{
+	border: 1px solid #000000;
+	background: url(images/nagrath.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	margin: 10px auto 10px auto;
+
+
+}
+.jbgupta{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+.jbguptabook{
+	border: 1px solid #000000;
+	background: url(images/jbgupta.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
+}
+.creema{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+
+.creemabook{
+	border: 1px solid #000000;
+	background: url(images/creema.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	margin: 10px auto 10px auto;
+
+
+}
+.letusc{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+.letuscbook{
+	border: 1px solid #000000;
+	background: url(images/letusc.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
+}
+.cbala{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 37% 40px 37%;
+
+}
+.cbalabook{
+	border: 1px solid #000000;
+	background: url(images/cbala.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
+}
+.bcpunmia{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+
+.bcpunmiabook{
+	border: 1px solid #000000;
+	background: url(images/bcpunmia.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	margin: 10px auto 10px auto;
+
+
+}
+.rskhurmi{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+.rskhurmibook{
+	border: 1px solid #000000;
+	background: url(images/rskhurmi.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
+}
+.kkdwivedi{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 37% 40px 37%;
+
+}
+.kkdwivedibook{
+	border: 1px solid #000000;
+	background: url(images/kkdwivedi.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
+}
+.rkrajput{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+
+.rkrajputbook{
+	border: 1px solid #000000;
+	background: url(images/rkrajput.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	margin: 10px auto 10px auto;
+
+
+}
+.mmrathore{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+.mmrathorebook{
+	border: 1px solid #000000;
+	background: url(images/mmrathore.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
+}
+.mathur{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 37% 40px 37%;
+
+}
+.mathurbook{
+	border: 1px solid #000000;
+	background: url(images/mathur.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
+}
+.basantag{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+
+.basantagbook{
+	border: 1px solid #000000;
+	background: url(images/basantag.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	margin: 10px auto 10px auto;
+
+
+}
+.ndbhatt{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 12% 40px 12%;
+
+}
+.ndbhattbook{
+	border: 1px solid #000000;
+	background: url(images/ndbhatt.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
+}
+.minakshiraman{
+	border: 1px solid #000000;
+	width: 25%;
+	float: left;
+	height: 400px;
+	margin: 40px 37% 40px 37%;
+
+}
+.minakshiramanbook{
+	border: 1px solid #000000;
+	background: url(images/minakshiraman.jpg) center no-repeat; 
+	display: block;
+	height: 223px;
+	width: 180px;
+	text-indent: -99999px;
+	margin: 10px auto 10px auto;
+
+
 }
