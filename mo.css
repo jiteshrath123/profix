@@ -19,7 +19,6 @@ ul{
 	list-style-type: none;
 }
 
-
 .header{
 	border: 1px solid #000000;
 	margin: 5px 5px 15px 11.19%;
@@ -85,7 +84,7 @@ h1{
 
 
 .nav a{
-
+	width: 1%;
 	padding: 5px 10px 5px 10px;
 	color: #000000;
 	border: 1px solid #000000;
@@ -95,17 +94,23 @@ h1{
 @media (max-width: 500px)
 {
 	.nav{
-		width: 110%;
+		width: 100%;
 
 		margin: 5px auto 0 auto;
 		font-size: 13px;
 		height: 40px;
 
 	}
-	.nav li{
-		width: 60px;
+	.nav a{
+		width: 50%;
+	padding: 5px 5px 5px 5px;
+	color: #000000;
+	border: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-radius: 10px;
+	margin: 10px 1% 10px 1%;
+}
 
-	}
 }
 .fnav{
 
@@ -206,18 +211,12 @@ h1{
 	font-family: lato,helvetica,verdana;
 	padding: 10px 20px 10px 20px;
 	margin: 0 50px 0 50px;
-	
 
 	color: #ffffff;
 	text-decoration: none;
 	border: 3px solid #ffffff;
 	border-radius: 20px;
 
-}
-.upper a:hover{
-	background-color: white;
-	opacity: 0.4;
-	color: blue;
 }
 .upper li{
 	display: inline;
@@ -1556,28 +1555,7 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.ramanna{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
 
-}
-.ramannabook{
-	border: 1px solid #000000;
-	background: url(images/ramanna.jpg) center no-repeat; 
-	display: block;
-	height: 223px;
-	width: 180px;
-	margin: 10px auto 10px auto;
-
-
-}
-
-}
 .grewal1{
 	border: 1px solid #000000;
 	width: 25%;
@@ -1596,17 +1574,6 @@ background-color: white;
 	margin: 10px auto 10px auto;
 
 
-}
-@media (max-width: 500px)
-{
-	.grewal1{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-}
 }
 .malik{
 	border: 1px solid #000000;
@@ -1627,17 +1594,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.malik{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
 .ssdara{
 	border: 1px solid #000000;
 	width: 25%;
@@ -1656,36 +1612,12 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.ssdara{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-}
-}
-
 .jain{
 	border: 1px solid #000000;
 	width: 25%;
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
-}
-
-@media (max-width: 500px)
-{
-	.jain{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-}
 
 }
 .jainbook{
@@ -1718,18 +1650,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.shashi{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .deltoro{
 	border: 1px solid #000000;
 	width: 25%;
@@ -1748,18 +1668,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.deltoro{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .mittal{
 	border: 1px solid #000000;
 	width: 25%;
@@ -1778,20 +1686,7 @@ background-color: white;
 	margin: 10px auto 10px auto;
 
 
-}
-@media (max-width: 500px)
-{
-	.mittal{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
-.nagrath{
+}.nagrath{
 	border: 1px solid #000000;
 	width: 25%;
 	float: left;
@@ -1809,18 +1704,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.nagrath{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .jbgupta{
 	border: 1px solid #000000;
 	width: 25%;
@@ -1840,18 +1723,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.jbgupta{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .creema{
 	border: 1px solid #000000;
 	width: 25%;
@@ -1871,18 +1742,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.creema{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .letusc{
 	border: 1px solid #000000;
 	width: 25%;
@@ -1902,18 +1761,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.letusc{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .cbala{
 	border: 1px solid #000000;
 	width: 25%;
@@ -1933,18 +1780,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.cbala{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .bcpunmia{
 	border: 1px solid #000000;
 	width: 25%;
@@ -1964,18 +1799,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.bcpunmia{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .rskhurmi{
 	border: 1px solid #000000;
 	width: 25%;
@@ -1995,18 +1818,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.rskhurmi{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .kkdwivedi{
 	border: 1px solid #000000;
 	width: 25%;
@@ -2026,18 +1837,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.kkdwivedi{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .rkrajput{
 	border: 1px solid #000000;
 	width: 25%;
@@ -2057,18 +1856,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.rkrajput{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .mmrathore{
 	border: 1px solid #000000;
 	width: 25%;
@@ -2077,18 +1864,6 @@ background-color: white;
 	margin: 40px 12% 40px 12%;
 
 }
-@media (max-width: 500px)
-{
-	.mmrathore{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .mmrathorebook{
 	border: 1px solid #000000;
 	background: url(images/mmrathore.jpg) center no-repeat; 
@@ -2119,18 +1894,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.mathur{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .basantag{
 	border: 1px solid #000000;
 	width: 25%;
@@ -2150,18 +1913,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.basantag{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .ndbhatt{
 	border: 1px solid #000000;
 	width: 25%;
@@ -2181,18 +1932,6 @@ background-color: white;
 
 
 }
-@media (max-width: 500px)
-{
-	.ndbhatt{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
 .minakshiraman{
 	border: 1px solid #000000;
 	width: 25%;
@@ -2211,22 +1950,4 @@ background-color: white;
 	margin: 10px auto 10px auto;
 
 
-}
-@media (max-width: 500px)
-{
-	.minakshiraman{
-	border: 1px solid #000000;
-	width: 90%;
-	float: none;
-	height: 400px;
-	margin: 10px 4.5% 40px 4.5%;
-
-		}
-}		
-
-.price h1{
-	font-size: 36px;
-	text-decoration: none;
-	font-family: sans-serif;
-	margin: 20px 10px 0 30px;
 }
