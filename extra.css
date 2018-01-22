@@ -5,13 +5,16 @@ body,html,h1,h2,h3,h4,li,img,p{
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	font-weight: 0;
 
 }
 body{
-	background-color: hsl(90,5%,80%);
-	border: 1px solid #000000;
 
+
+	background-color: hsl(158,50%,98%);
 	margin: 0 auto 0 auto;
+
+
 }
 
 ul{
@@ -21,11 +24,11 @@ ul{
 
 
 .header{
-	border: 1px solid #000000;
-	margin: 5px 5px 15px 11.19%;
+
+	margin: 5px 5px 5px 11.19%;
 	float: left;
-	height: 110px;
-	width: 18.6567%;
+	height: 80px;
+	width: 15%;
 }
 .header img{
 	width: 100%;
@@ -46,15 +49,16 @@ ul{
 	}
 
 	.header{
-		border: 1px solid #000000;
-		margin: 0px auto 0px auto;
-		float: none;
+
+		margin: 5px 0 0 5px;
+		float: left;
 		height: 90px;
-		width: 190px;
+		width: 170px;
+
 	}
 	.header img{
 		height: 90px;
-		width: 190px;
+		width: 170px;
 	
 	}
 }
@@ -71,27 +75,51 @@ h1{
 	text-decoration: underline;
 }
 .nav{
-	margin: 50px 100px 5px 0px;
+	margin: 15px 100px 0px 0px;
 	width: 700px;
 	float: right;
 	height: 65px;
 	font-family: rockwell,coustard,patuaone,geometrcic-sans-serif;
 	font-size: 20px;
 	color: #ff0000;
-	border: 1px solid #000000;
+
 
 	
 }
-
+.nav li{
+}
 
 .nav a{
 
-	padding: 5px 10px 5px 10px;
-	color: #000000;
-	border: 1px solid #000000;
-	border-top: 1px solid #000000;
-	border-radius: 10px;
+	padding: 5px 15px 5px 15px;
+	color: hsl(158,45%,30%);
+	box-sizing: 100px;
+	font-family: Courier New, monospace;
+
+	
+
+
 }
+.nav a:hover{
+	border: 2px solid hsl(158,40%,30%);
+	padding: 5px 13px 5px 13px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	box-shadow: 2px 2px 2px 2px hsl(158,40%,30%); 
+}
+.active{
+	border: 2px solid hsl(158,40%,30%);
+	padding: 5px 15px 5px 15px;
+
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	box-shadow: 2px 2px 2px 2px hsl(158,40%,30%);	
+}
+.active:hover{
+	margin: 0 2px 0 2px;
+	padding: 5px 15px 5px 15px;
+}
+
 @media (max-width: 500px)
 {
 	.nav{
@@ -127,7 +155,7 @@ h1{
 .fnav a{
 
 
-	color: #000000;
+	color: #ffffff;
 	margin: 0px 4.666% 0px 4.666%;
 	
 
@@ -156,7 +184,7 @@ h1{
 .fnav a{
 
 
-	color: #000000;
+	color: #ffffff;
 	margin: 20px 0 20px 0;
 	
 
@@ -173,7 +201,7 @@ h1{
 .upper{
 	height: 450px;
 	border: 1px solid #000000;
-	background: url(images/upper.jpg);
+	background: url(images/nn.jpg);
 }
 .upper ul{
 
@@ -216,7 +244,7 @@ h1{
 }
 .upper a:hover{
 	background-color: white;
-	opacity: 0.4;
+	opacity: 0.1;
 	color: blue;
 }
 .upper li{
@@ -233,7 +261,7 @@ h1{
 	.upper{
 	height: 350px;
 	border: 1px solid #000000;
-	background: url(images/upper500.jpg);
+	background: url(images/nn.jpg);
 }
 	.upper h1{
 	font-size: 56px;
@@ -288,7 +316,7 @@ h1{
 .upper1{
 	height: 200px;
 	border: 1px solid #000000;
-	background: url(images/upper1.jpg);	
+	background: url(images/nn.jpg);	
 }
 .upper1 h1{
 	font-size: 72px;
@@ -331,7 +359,7 @@ h1{
 	height: 120px;
 	width: 100%;
 	border: 1px solid #000000;
-	background: url(images/upper1500.jpg);	
+	background: url(images/nn.jpg);	
 }
 .upper1 h1{
 	font-size: 48px;
@@ -371,17 +399,17 @@ h1{
 
 }
 .description{
-background-color: hsl(280,71%,93%); 
+
 }
 .description .welcome{
-	border: 1px solid hsl(280,15%,50%);
-	margin: 40px auto 20px auto;
+	border: 1px solid hsl(158,30%,30%);
+	margin: 20px auto 40px auto;
 	padding: 10px;
-
+	background-color: hsl(158,70%,93%);
 	width: 74.62%;
 	border-radius: 20px;
-	background-color: white;
 
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 .description .student{
 	height: 300px;
@@ -389,7 +417,8 @@ background-color: hsl(280,71%,93%);
 	float: right;
 	margin-left: 10px;
 	border-radius: 20px;
-	border: 1px solid hsl(280,15%,50%);
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 10px 4px hsl(158,30%,30%);
 
 }
 .description .pcard{
@@ -398,7 +427,8 @@ background-color: hsl(280,71%,93%);
 	margin-right: 30px;
 	float: left;
 	border-radius: 20px;
-	border: 1px solid hsl(280,15%,50%);
+	border: 1px solid hsl(158,70%,93%);
+	box-shadow: 2px 2px 10px 4px hsl(158,70%,93%);
 
 
 }
@@ -410,51 +440,59 @@ background-color: hsl(280,71%,93%);
 
 
 	border-radius: 20px;
-	background-color: white;
-	border: 1px solid hsl(280,15%,50%);
+	background-color: hsl(158,40%,40%);
+	border: 1px solid hsl(158,40%,30%);
+	box-shadow: 2px 2px 10px 4px hsl(158,40%,30%);
 }
 .description h1{
-	font-size: 48px;
+	font-size: 60px;
+	color: hsl(158,30%,20%); 
+	font-weight: -1000;
 	text-decoration: none;
-
-	margin: 0;
-
-
+	margin: 20px;
+ 	text-align: center;
+ 	font-family: Courier New, monospace;
 }
+
 .description h2{
-	font-size: 24px;
+	font-size: 30px;
 	text-decoration: none;
-
+	color: hsl(158,70%,93%);
 	margin: 0;
-
+	font-family: Arial Narrow, sans-serif;
+	font-weight: 600;
 }
 .description li{
-	font-size: 18px; 
-	font-family: lato,helvetica,verdana;
-	line-height: ;
+	font-size: 20px; 
+	font-family: Arial Narrow, sans-serif;
+	line-height:;
 	margin: 20px 0 20px 0;
+	color: hsl(158,70%,93%);
+	font-weight: 545;
 
 }
 .description p{
-	font-size: 18px; 
-	font-family: lato,helvetica,verdana;
-	line-height: 1.5;
+	font-size: 20px; 
+	font-family: Arial Narrow, sans-serif;
+	line-height: 2;
 	margin: 20px 0 20px 0;
+	color: hsl(158,30%,30%);
+	font-weight: 545;
 
 }
 @media (max-width: 500px)
 {
 	.description{
-background-color: hsl(280,71%,93%); 
+		margin: 20px;
 }
 .description .welcome{
 	border: 1px solid hsl(280,15%,50%);
-	margin: 40px auto 20px auto;
+	margin: 20px auto 40px auto;
 	padding: 10px;
 
 	width: 90%;
-	border-radius: 20px;
-	background-color: white;
+
+
 
 }
 .description .student{
@@ -462,8 +500,8 @@ background-color: hsl(280,71%,93%);
 	width: 150px;
 	float: right;
 	margin-left: 10px;
-	border-radius: 20px;
-	border: 1px solid hsl(280,15%,50%);
+
+
 
 }
 .description .pcard{
@@ -472,8 +510,8 @@ background-color: hsl(280,71%,93%);
 	margin-left: 10px;
 	margin-right: 0px;
 	float: right;
-	border-radius: 20px;
-	border: 1px solid hsl(280,15%,50%);
+
+
 
 
 }
@@ -485,14 +523,15 @@ background-color: hsl(280,71%,93%);
 
 
 	border-radius: 20px;
-	background-color: white;
-	border: 1px solid hsl(280,15%,50%);
+
+
 }
 .description h1{
 	font-size: 36px;
 	text-decoration: none;
-
+	text-align: center;
 	margin: 0;
+
 
 
 }
@@ -505,14 +544,14 @@ background-color: hsl(280,71%,93%);
 }
 .description li{
 	font-size: 15px; 
-	font-family: lato,helvetica,verdana;
+
 	line-height: ;
 	margin: 20px 0 20px 0;
 
 }
 .description p{
 	font-size: 15px; 
-	font-family: lato,helvetica,verdana;
+
 	line-height: 1.5;
 	margin: 20px 0 20px 0;
 }
@@ -544,14 +583,17 @@ h2{
 	width: 45%;
 	height: 250px;
 	margin: 60px 2.3% 0 2.3%;
-	border: 1px solid #000000;
 	float: left;
 	border-radius: 10px;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	
 }
 .buybooks{
 	width: 200px;
 	height: 230px;
-	border: 1px solid #000000;
+
 	background: url(images/buy.jpg) left no-repeat;
 
 	display: block;
@@ -561,6 +603,8 @@ h2{
 	margin: 10px;
 	transition: all 0.5s 0.2s;
 	border-radius: 10px;
+	box-shadow: 2px 2px 5px 2px hsl(158,40%,40%);
+
 
 }
 .buybooks:hover{
@@ -570,9 +614,11 @@ h2{
 	width: 45%;
 	height: 250px;
 	margin: 60px 2.3% 0 2.3%;
-	border: 1px solid #000000;
 	float: left;
 	border-radius: 10px;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
 }
 .sellbooks{
 	width: 200px;
@@ -587,6 +633,7 @@ h2{
 
 	transition: all 0.5s 0.2s;
 	border-radius: 10px;
+	box-shadow: 2px 2px 5px 2px hsl(158,40%,40%);
 
 }
 .sellbooks:hover{
@@ -596,9 +643,11 @@ h2{
 	width: 45%;
 	height: 250px;
 	margin: 60px 2.3% 0 2.3%;
-	border: 1px solid #000000;
 	float: left;
 	border-radius: 10px;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,40%,40%);
 }
 
 .attach{
@@ -612,6 +661,9 @@ h2{
 	margin: 10px;
 	transition: all 0.5s 0.2s;
 	border-radius: 10px;
+	border: 1px solid hsl(158,70%,93%);
+	box-shadow: 2px 2px 10px 4px hsl(158,70%,93%);
+
 
 }
 .attach:hover{
@@ -621,9 +673,11 @@ h2{
 	width: 45%;
 	height: 250px;
 	margin: 60px 2.3% 0 2.3%;
-	border: 1px solid #000000;
 	float: left;
 	border-radius: 10px;
+	border: 1px solid hsl(158,30%,30%);
+	background-color: hsl(158,40%,40%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .profixcard{
@@ -637,6 +691,8 @@ h2{
 	margin: 10px;
 	transition: all 0.5s 0.2s;
 	border-radius: 10px;
+	border: 1px solid hsl(158,70%,93%);
+	box-shadow: 2px 2px 10px 4px hsl(158,70%,93%);
 }
 .profixcard:hover{
 	background-position: 0 -230px;
@@ -657,7 +713,7 @@ h2{
 	width: 90%;
 	height: 150px;
 	margin: 20px 4.5% 0 4.5%;
-	border: 1px solid #000000;
+
 	float: none;
 	border-radius: 10px;
 }
@@ -677,15 +733,18 @@ h2{
 
 }
 .buybooks:hover{
-	background-position: -300px 0;
+	background-position: -120px 0;
 }
 .sb{
 	width: 90%;
 	height: 150px;
 	margin: 20px 4.5% 0 4.5%;
-	border: 1px solid #000000;
+
 	float: none;
 	border-radius: 10px;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,40%,40%);
 }
 .sellbooks{
 	width: 120px;
@@ -700,18 +759,23 @@ h2{
 
 	transition: all 0.01s 0.2s;
 	border-radius: 10px;
+	border: 1px solid hsl(158,70%,93%);
+	box-shadow: 2px 2px 10px 4px hsl(158,70%,93%);
 
 }
 .sellbooks:hover{
-	background-position: 0 -300px;
+	background-position: 0 -140px;
 }
 .at{
 	width: 90%;
 	height: 150px;
 	margin: 20px 4.5% 0 4.5%;
-	border: 1px solid #000000;
+
 	float: none;
 	border-radius: 10px;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
 }
 
 .attach{
@@ -725,16 +789,18 @@ h2{
 	margin: 5px;
 	transition: all 0.01s 0.2s;
 	border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px 2px hsl(158,40%,40%);
+
 
 }
 .attach:hover{
-	background-position: -300px 0;
+	background-position: -120px 0;
 }
 .pc{
 	width: 90%;
 	height: 150px;
 	margin: 20px 4.5% 0 4.5%;
-	border: 1px solid #000000;
 	float: none;
 	border-radius: 10px;
 }
@@ -743,7 +809,9 @@ h2{
 	width: 120px;
 	height: 140px;
 	border: 1px solid #000000;
-	background: url(images/pcard1.jpg) no-repeat;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px 2px hsl(158,40%,40%);
+background: url(images/pcard1.jpg) no-repeat;
 	display: block;
 	float: left;
 	text-indent: 150px;
@@ -777,8 +845,10 @@ h2{
 	text-indent: -99999px;
 	margin: 50px auto 50px auto;
 	border-radius: 100px;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
+
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
 }
 .nd{
 
@@ -789,8 +859,9 @@ h2{
 	text-indent: -99999px;
 	border-radius: 100px;
 	margin: 50px auto 50px auto;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
 }
 .rd{
 
@@ -802,8 +873,9 @@ h2{
 	margin: 50px auto 50px auto;
 
 	border-radius: 100px;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
+	box-shadow: 2px 2px 10px 10px hsl(158,70%,93%);
 }
 .th{
 
@@ -815,38 +887,49 @@ h2{
 	margin: 50px auto 50px auto;
 
 	border-radius: 100px;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
+	box-shadow: 2px 2px 10px 10px hsl(158,70%,93%);
 }
 .one{
 
 width: 300px;
 float: left;
 height: 300px;
-margin: 10px 100px 10px 270px;
+margin: 20px 100px 40px 270px;
 border: 1px solid #000000;
 border-radius: 10px;
-background-color: white;
+
+border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
 }
 .two{
 
 width: 300px;
 float: left;
 height: 300px;
-margin: 10px 200px 10px 100px; 
+margin: 20px 200px 40px 100px; 
 border: 1px solid #000000;
 border-radius: 10px;
-background-color: white;
+
+border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
 }
 .three{
 
 width: 300px;
 float: left;
 height: 300px;
-margin: 10px 100px 10px 270px;
+margin: 40px 100px 20px 270px;
 border: 1px solid #000000;
 border-radius: 10px;
-background-color: white;
+
+border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,40%,40%);
+
 }
 .st:hover{
 	margin-top: 40px;
@@ -866,16 +949,19 @@ background-color: white;
 	width: 300px;
 	float: left;
 	height: 300px;
-	margin: 10px 200px 10px 100px;
+	margin: 40px 200px 20px 100px;
 	border: 1px solid #000000;
 	border-radius: 10px;
-	background-color: white;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,40%,40%);
+
 }
 @media (max-width: 500px)
 {
 	.years{
 	margin: 20px 0 20px 0px;
-	border: 1px solid #000000;
+
 }
 .st{
 
@@ -886,7 +972,7 @@ background-color: white;
 	text-indent: -99999px;
 	margin: 25px auto 25px auto;
 	border-radius: 100px;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
 }
 .nd{
@@ -898,7 +984,7 @@ background-color: white;
 	text-indent: -99999px;
 	border-radius: 100px;
 	margin: 25px auto 25px auto;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
 }
 .rd{
@@ -911,7 +997,7 @@ background-color: white;
 	margin: 25px auto 25px auto;
 
 	border-radius: 100px;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
 }
 .th{
@@ -924,7 +1010,7 @@ background-color: white;
 	margin: 25px auto 25px auto;
 
 	border-radius: 100px;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
 }
 .one{
@@ -933,9 +1019,9 @@ width: 320px;
 float: none;
 height: 250px;
 margin: 10px auto 10px auto;
-border: 1px solid #000000;
+
 border-radius: 10px;
-background-color: white;
+
 }
 .two{
 
@@ -943,9 +1029,8 @@ width: 320px;
 float: none;
 height: 250px;
 margin: 10px auto 10px auto; 
-border: 1px solid #000000;
+
 border-radius: 10px;
-background-color: white;
 }
 .three{
 
@@ -953,9 +1038,9 @@ width: 320px;
 float: none;
 height: 250px;
 margin: 10px auto 10px auto;
-border: 1px solid #000000;
+
 border-radius: 10px;
-background-color: white;
+
 }
 .st:hover{
 	margin-top: 15px;
@@ -976,17 +1061,17 @@ background-color: white;
 	float: none;
 	height: 250px;
 	margin: 10px auto 10px auto;
-	border: 1px solid #000000;
+
 	border-radius: 10px;
-	background-color: white;
-}
 
 }
 
+}
 
 
-.media .qlogo{
-	background: url(images/quoralogo.png) left top no-repeat; 
+
+.media .twitterlogo{
+	background: url(images/twitter.jpg) left top no-repeat; 
 	display: block;
 	height: 40px;
 	width: 40px;
@@ -994,50 +1079,87 @@ background-color: white;
 	text-indent: -9999px;
 	margin : 5px 5px 5px 5px;
 	float: left;
+	background-position: 0px -40px;
+	border-radius: 20px;
+	transition: 0.1s;
 
 }
-.media .inlogo{
-	background: url(images/instalogo.png) left top no-repeat; 
+.media .gitlogo{
+	background: url(images/git.jpg) left top no-repeat; 
 	display: block;
 	height: 40px;
 	width: 40px;
 	text-indent: -9999px;
 	margin : 5px 5px 5px 5px;
 	float: left;
-	border-radius: 5px;
+	border-radius: 20px;
+	transition: 0.1s;
 
 }
 .media .fblogo{
-	background: url(images/fblogo.png) left top no-repeat; 
+	background: url(images/fb.jpg) left top no-repeat; 
 	display: block;
 	height: 40px;
 	width: 40px;
 	text-indent: -9999px;
 	float: left;
 	margin : 5px 5px 5px 5px;
-	border-radius: 5px;
+	border-radius: 20px;
+	transition: 0.1s;
+
 
 }
 .media{
 
 	width: 150px;
-	margin: 0px 0 0px 590px;
-	border: 1px solid #000000;
+	margin: 0px auto 0 auto;
+
 }
+@media (max-width: 500px)
+{
+	.media{
+		float: left;
+		margin-left: 10px;
+	}
+}
+
 .media .fblogo:hover,.arpit .fblogo:focus{
-	margin-top: 0px;
+	background-position: 0 -40px;
 }
-.media .inlogo:hover,.arpit .inlogo:focus{
-	margin-top: 0px;
+.media .gitlogo:hover,.arpit .gitlogo:focus{
+	background-position: 0 -42px;
 }
-.media .qlogo:hover,.arpit .qlogo:focus{
-	margin-top: 0px;
+.media .twitterlogo:hover,.arpit .twitterlogo:focus{
+	background-position: 0px 0px;
+}
+{
+
 }
 .footer{
 	border: 1px solid #000000;
 	height: 200px;
+	background-color: hsl(158,45%,15%);
 
 }
+.copyright{
+	height: 40px;
+	background-color: hsl(158,40%,10%);
+}
+@media (max-width: 500px)
+{
+	.footer{
+	border: 1px solid #000000;
+	height: 300px;
+	background-color: hsl(158,45%,15%);
+
+}
+.copyright{
+	height: 40px;
+	background-color: hsl(158,40%,10%);
+}
+
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -1078,19 +1200,23 @@ background-color: white;
 }
 
 .dropbtn {
-    background-color: hsl(280,30%,60%);
+	background-color: hsl(158,30%,45%);
+    
     color: white;
     padding: 10px;
     font-size: 20px;
     border: none;
     cursor: pointer;
-		margin: 15px;
-		width: 500px;
+		margin: 10px auto 10px auto;
+		width: 90%;
+		height: 50px;
+		text-decoration: none;
+		box-shadow: 2px 2px 7px 2px hsl(158,30%,45%);
 }
 
 .dropdown {
     position: relative;
-    display: inline-block;
+
 }
 
 .dropdown-content {
@@ -1160,19 +1286,24 @@ background-color: white;
 }
 
 .dropbtn {
-    background-color: hsl(280,30%,60%);
+
     color: white;
-    padding: 10px;
+    padding: 5px;
     font-size: 20px;
     border: none;
     cursor: pointer;
-		margin: 15px;
-		width: 300px;
+
+
+		height: 50px;
+		margin: 15px auto 15px auto;
+		width: 90%;
+		text-decoration: none;
+		box-shadow: 2px 2px 7px 2px hsl(158,30%,45%);
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+
+
 }
 
 .dropdown-content {
@@ -1219,6 +1350,9 @@ background-color: white;
 	border-radius: 100px;
 	border: 1px solid #000000;
 	transition: all 0.1s;
+
+	border: 1px solid hsl(158,40%,40%);
+	box-shadow: 2px 2px 10px 4px hsl(158,40%,40%);
 }
 .flipkart{
 
@@ -1231,6 +1365,9 @@ background-color: white;
 	margin: 50px auto 50px auto;
 	border: 1px solid #000000;
 	transition: all 0.1s;
+
+	border: 1px solid hsl(158,40%,40%);
+	box-shadow: 2px 2px 10px 4px hsl(158,40%,40%);
 }
 .shopclues{
 
@@ -1242,8 +1379,10 @@ background-color: white;
 	margin: 50px auto 50px auto;
 
 	border-radius: 100px;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
+	border: 1px solid hsl(158,70%,93%);
+	box-shadow: 2px 2px 10px 4px hsl(158,70%,93%);
 }
 
 .a{
@@ -1251,9 +1390,12 @@ width: 400px;
 float: left;
 height: 350px;
 margin: 10px 50px 10px 160px;
-border: 1px solid #000000;
+
 border-radius: 10px;
 background-color: white;
+border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
 }
 .f{
 
@@ -1264,6 +1406,9 @@ margin: 10px 50px 10px 150px;
 border: 1px solid #000000;
 border-radius: 10px;
 background-color: white;
+border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
 }
 .s{
 
@@ -1271,9 +1416,11 @@ width: 400px;
 float: left;
 height: 350px;
 margin: 10px 100px 10px 460px;
-border: 1px solid #000000;
+
 border-radius: 10px;
-background-color: white;
+
+box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,40%,40%);
 }
 .amazon:hover{
 	margin-top: 40px;
@@ -1301,7 +1448,7 @@ background-color: white;
 	text-indent: -99999px;
 	margin: 20px auto 20px auto;
 	border-radius: 100px;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
 }
 .flipkart{
@@ -1313,7 +1460,7 @@ background-color: white;
 	text-indent: -99999px;
 	border-radius: 100px;
 	margin: 20px auto 20px auto;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
 }
 .shopclues{
@@ -1326,7 +1473,7 @@ background-color: white;
 	margin: 20px auto 20px auto;
 
 	border-radius: 100px;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
 }
 
@@ -1337,7 +1484,7 @@ height: 270px;
 margin: 10px auto 10px auto;
 border: 1px solid #000000;
 border-radius: 10px;
-background-color: white;
+
 }
 .f{
 
@@ -1347,7 +1494,7 @@ height: 270px;
 margin: 10px auto 10px auto; 
 border: 1px solid #000000;
 border-radius: 10px;
-background-color: white;
+
 }
 .s{
 
@@ -1358,6 +1505,8 @@ margin: 10px auto 10px auto;
 border: 1px solid #000000;
 border-radius: 10px;
 background-color: white;
+box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,40%,40%);
 }
 .amazon:hover{
 	margin-top: 10px;
@@ -1395,17 +1544,36 @@ background-color: white;
 	text-align: center;
 	text-decoration: none;
 }
-.tc li{
-	font-family: lato,helvetica,verdana;
+.tc li:nth-child(even){
+	font-family: Arial Narrow, sans-serif;
 	font-size: 18px;
 	margin: 15px 10px 15px 10px;
 	border: 1px solid #000000;
-	padding: 10px 0px 10px 0px;
+	padding: 10px 0px 10px 10px;
 	border-radius: 5px;
-	background-color: hsl(280,30%,60%);
-	color: white;
+	background-color: hsl(158,40%,40%);
+	height: 35px;
+
+
 
 }
+.tc li:nth-child(odd){
+	font-family: Arial Narrow, sans-serif;
+	font-size: 18px;
+	margin: 15px 10px 15px 10px;
+	border: 1px solid #000000;
+	padding: 10px 0px 10px 10px;
+	border-radius: 5px;
+	background-color: hsl(158,70%,93%);
+	height: 35px;
+
+
+}
+.tc ol li:before{
+
+  color: black;
+}
+
 .tc ol{
 	margin: 20px;
 }
@@ -1420,37 +1588,56 @@ background-color: white;
 	float: none;
 	margin: 10px auto 10px auto;
 	width: 95%;
-	height: 350px;
+	height: 450px;
 	border: 1px solid #000000;
 	border-radius: 10px;
 	background-color: white;
+	font-size: 15px;
 
 }
 .terms{
 	float: none;
 	margin: 10px auto 10px auto;
 	width: 95%;
-	height: 530px;
+	height: 600px;
 	border: 1px solid #000000;
 	border-radius: 10px;
 	background-color: white;
+
 
 }
 .tc h1{
 	font-size: 30px;
 	text-align: center;
 }
-.tc li{
-	font-family: lato,helvetica,verdana;
+.tc li:nth-child(even){
+	font-family: Arial Narrow, sans-serif;
 	font-size: 15px;
-	margin: 10px 10px 10px 0px;
+	margin: 15px 15px 15px 0px;
 	border: 1px solid #000000;
-	padding: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 10px;
 	border-radius: 5px;
-	background-color: hsl(280,30%,60%);
-	color: black;
+	background-color: hsl(158,40%,40%);
+	height: 40px;
+	color: hsl(158,70%,93%);
+
+
+
 
 }
+.tc li:nth-child(odd){
+	font-family: Arial Narrow, sans-serif;
+	font-size: 15px;
+	margin: 15px 15px 15px 0px;
+	border: 1px solid #000000;
+	padding: 5px 0px 10px 10px;
+	border-radius: 5px;
+	background-color: hsl(158,70%,93%);
+	height: 40px;
+
+
+}
+
 .tc ul{
 	margin: 0px;
 }
@@ -1458,42 +1645,50 @@ background-color: white;
 }
 .sem1{
 	float: left;
-	margin: 10px 2.3% 10px 2.3%;
+	margin: 30px 2.3% 30px 2.3%;
 	width: 45%;
-
-	border: 1px solid #000000;
+	padding-bottom: 30px;
+	border: 1px solid hsl(158,30%,45%);
 	border-radius: 10px;
-	background-color: white;
+	background-color: hsl(158,30%,95%);
+	box-shadow: 2px 2px 5px 2px;
+
 
 }
 
 .sem2{
 	float: left;
-	margin: 10px 2.3% 10px 2.3%;
+	margin: 30px 2.3% 30px 2.3%;
 	width: 45%;
-
-	border: 1px solid #000000;
+	padding-bottom: 30px;
+	border: 1px solid hsl(158,30%,45%);
 	border-radius: 10px;
-	background-color: white;
+	background-color: hsl(158,30%,95%);
+	box-shadow: 2px 2px 5px 2px;
 
 }
 .sem h1{
 	font-size: 45px;
 	text-align: center;
 	text-decoration: none;
+	font-family: Courier New, monospace;
+	margin-bottom: 30px;
+	color: hsl(158,20%,20%);
 }
 
 .sem a{
-	background-color: hsl(280,30%,60%);
     color: white;
     display: block;
     text-align: center;
-    padding: 10px;
     font-size: 20px;
     border: none;
+	background-color: hsl(158,30%,45%);
+    padding: 10px;
     cursor: pointer;
 		margin: 15px auto 15px auto;
-		width: 500px;
+		width: 90%;
+		text-decoration: none;
+		box-shadow: 2px 2px 7px 2px hsl(158,30%,45%); 
 
 }
 
@@ -1506,7 +1701,9 @@ background-color: white;
 
 	border: 1px solid #000000;
 	border-radius: 10px;
-	background-color: white;
+	padding-bottom: 20px;
+    
+
 
 }
 .sem2{
@@ -1516,7 +1713,7 @@ background-color: white;
 
 	border: 1px solid #000000;
 	border-radius: 10px;
-	background-color: white;
+	padding-bottom: 20px;
 
 }
 .sem h1{
@@ -1524,14 +1721,15 @@ background-color: white;
 	text-align: center;
 }
 .sem a{
- background-color: hsl(280,30%,60%);
+ 
     color: white;
     padding: 10px;
     font-size: 20px;
     border: none;
     cursor: pointer;
-		margin: 15px;
-		width: 295px;}
+    margin: 15px auto 15px auto;
+
+}
 
 }
 .books{
@@ -2229,4 +2427,38 @@ background-color: white;
 	text-decoration: none;
 	font-family: sans-serif;
 	margin: 20px 10px 0 30px;
+}
+.nav2 .dropbtn{
+width: 100px;
+background-color: hsl(90,5%,80%);
+display: none;
+
+}
+@media (max-width: 500px)
+{
+	.nav{
+		display: none;
+	}
+	.nav2{
+		float: right;
+
+		margin: 0px ;
+	}
+	.nav2 .dropbtn{
+width: 100px;
+color: hsl(90,5%,80%);
+display: block;
+
+}
+.nav2 img{
+	width: 50px;
+	height: 50px;
+}
+.nav2 button{
+	display: hidden;
+}
+.main .dropbtn{
+	height: 70px;
+	margin: 15px 15px 20px 0;
+	background-color: hsl(158,30%,90%);
 }

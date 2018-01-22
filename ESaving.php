@@ -1,18 +1,22 @@
 <!Doctype html>
 <html>
 	<head>
-
+		
 		<link rel="stylesheet" href="extra.css">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 	</head>
 	<body>
 
 		<div class="main">
+		
+		<div class="group">
+			
+			
 		<div class="header">
 			<img src="images/logo.png" alt="logo"> 
-		</div>
 
+		</div>
 		<div class="nav2">
 		<div style="text-align:center">
 		<div class="dropdown">
@@ -27,42 +31,39 @@
 		</div>
 </div>
 </div>
-
 		<div class="nav">
-
-
-
 			<ul>
 				<li><a href="first.html">Home</a></li>
-				<li><a href="services.html" class="active">Services</a></li>
+				<li><a href="services.html">Services</a></li>
 				<li><a href="ESaving.html">E-Saving</a></li>
 				<li><a href="t&c.html">T & C</a></li>
 				<li><a href="contact.html">Contact us</a></li>
 			</ul>
 		</div>
-		<div class="clear"></div>
-	</div>
-	<div class="upper1">
-			<h1>Our Services</h1>
-			<h2>We works according to demand of the students</h2> 
 		</div>
-		<div class="services">
-			<div class="bb">
-				<a href="buybooks.html" class="buybooks">Buy_Books</a>
-			</div>
-			<div class="sb">
-				<a href="sellbooks.html" class="sellbooks">Sell_Books</a>
-			</div>
-			<div class="at">
-				<a href="attachments.html" class="attach">Attachments</a>
-			</div>
-			<div class="pc">
-				<a href="profix.html" class="profixcard">Profix_Card</a>
-			</div>
-			<div class="clear"></div> 
+		<div class="clear"></div>
+		</div>
+		
+		<div class="upper1">
+			<h1>Profix E-Saving</h1>
+			<h2>Kya aapne apna poora cashback nhi liya ?</h2> 
 		</div>
 
+
+		<div class="saving">
+			<div class="a">
+			<h2><a href="amazon.html" class="amazon">amazon</a></h2>
+			</div>
+			<div class="f">
+			<h2><a href="flipkark.html" class="flipkart">flipkart</a></h2>
+			</div>
+			<div class="s">
+			<h2><a href="shopclues.html" class="shopclues">shopclues</a></h2>
+			</div>
+			<div class="clear"></div>
+		</div>
 		
+	 
 		<div class="footer">
 			<div class="fnav">
 			<ul>
@@ -86,8 +87,4 @@
 
 		</div>
 	<div class="clear"></div>
-
-
-
   </body>
-</html>
