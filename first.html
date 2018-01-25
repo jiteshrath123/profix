@@ -13,7 +13,7 @@
 		</div>
 
 		<div class="nav2">
-		<div style="text-align:center">
+		<div style="text-align:inherit">
 		<div class="dropdown">
 		  <button class="dropbtn"><img src="images/btn.png"></button>
 		  <div class="dropdown-content">
@@ -44,12 +44,12 @@
 		<div class="upper">
 			<h1>Save. Sale. Earn.</h1>
 			<h2>WHY TO BOTHER ABOUT THE BOOKS WHEN YOU CAN GET THEM IN YOUR OWN COLLEGE</h2>
-			<ul>
-
-				<li><a href="buybooks.html">Buy Books</a></li>
-				<li><a href="sellbooks.html">Sell Books</a></li>
-				<li><a href="attachments.html">Attachments</a></li>
-			</ul>
+			
+			<div class="cent">
+				<div class="first"><a href="buybooks.html">Buy Books</a></div>
+				<a href="sellbooks.html">Sell Books</a>
+				<a href="attachments.html">Attachments</a>
+			</div>
 		</div>
 		</div>
 		</div>
@@ -107,5 +107,18 @@
 
 
 
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCcBVxIJ4xAgtk6bL6K-Kv8_l298G73jfI",
+    authDomain: "profix-24371.firebaseapp.com",
+    databaseURL: "https://profix-24371.firebaseio.com",
+    projectId: "profix-24371",
+    storageBucket: "profix-24371.appspot.com",
+    messagingSenderId: "797585363873"
+  };
+  firebase.initializeApp(config);
+</script>
   </body>
 </html>

@@ -40,7 +40,7 @@ ul{
 	width: 100%;
 
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 
 	.main{
@@ -120,7 +120,7 @@ h1{
 	padding: 5px 15px 5px 15px;
 }
 
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.nav{
 		width: 110%;
@@ -160,7 +160,7 @@ h1{
 	
 
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.fnav{
 
@@ -226,7 +226,7 @@ h1{
 	color: #ffffff;
 	line-height: 1.5;
 	text-decoration: none;
-
+	font-weight: bold;
 
 }
 .upper a{
@@ -234,20 +234,22 @@ h1{
 	font-family: lato,helvetica,verdana;
 	padding: 10px 20px 10px 20px;
 	margin: 0 50px 0 50px;
-	
-
-	color: #ffffff;
-	text-decoration: none;
-	border: 3px solid #ffffff;
 	border-radius: 20px;
+
+	text-decoration: none;
+	background-color: white;
+	transition: 0.2s;
+	opacity: 0.7;
+	color: hsl(158,30%,20%);
+	border: 3px solid hsl(158,30%,20%);
 
 }
 .upper a:hover{
-	background-color: white;
-	opacity: 0.1;
-	color: blue;
+	background-color: transparent;
+	color: #ffffff;
+	border: 3px solid #ffffff;
+	opacity: 0.9;
 }
-.upper li{
 	display: inline;
 
 }
@@ -256,7 +258,16 @@ h1{
 
 	width: 830px; 
 }
-@media (max-width: 500px)
+.first{
+	margin-left: 20px;
+	width: 270px;
+	float: left;
+}
+.cent{
+	width: 850px;
+	margin: 0 auto 0 auto;
+}
+@media (max-width: 700px)
 {
 	.upper{
 	height: 350px;
@@ -291,16 +302,16 @@ h1{
 	font-size: 16px;
 	font-family: lato,helvetica,verdana;
 	padding: 10px 10px 10px 10px;
-	margin: 0 5px 0 5px;
+	margin: 0 1% 0 1%;
 
-	color: #ffffff;
+
 	text-decoration: none;
 	border: 3px solid #ffffff;
 	border-radius: 20px;
 
 }
 .upper li{
-	display: inline;
+
 
 }
 .upper ul{
@@ -308,8 +319,17 @@ h1{
 
 	width: 100%; 
 
-	float: right;
+
 	height: 50px
+}
+.first{
+	width: 115px;
+	margin: 0.5%;
+}
+.cent{
+	width: 360px;
+	margin: 0 auto 0 auto;
+
 }
 
 }
@@ -353,7 +373,7 @@ h1{
 	border-radius: 20px;
 
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.upper1{
 	height: 120px;
@@ -480,7 +500,7 @@ h1{
 	font-weight: 545;
 
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.description{
 		margin: 20px;
@@ -702,7 +722,7 @@ h2{
 	font-family: lato,helvetica,verdana;
 
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.services{
 
@@ -897,7 +917,7 @@ width: 300px;
 float: left;
 height: 300px;
 margin: 20px 100px 40px 270px;
-border: 1px solid #000000;
+
 border-radius: 10px;
 
 border: 1px solid hsl(158,30%,30%);
@@ -957,7 +977,7 @@ border: 1px solid hsl(158,30%,30%);
 	background-color: hsl(158,40%,40%);
 
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.years{
 	margin: 20px 0 20px 0px;
@@ -1115,7 +1135,7 @@ border-radius: 10px;
 	margin: 0px auto 0 auto;
 
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.media{
 		float: left;
@@ -1145,7 +1165,7 @@ border-radius: 10px;
 	height: 40px;
 	background-color: hsl(158,40%,10%);
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.footer{
 	border: 1px solid #000000;
@@ -1222,15 +1242,16 @@ border-radius: 10px;
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: #000000;
+    width: 400px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    opacity: 0.7;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 20px 0px 12px 0px;
     text-decoration: none;
     display: block;
 }
@@ -1244,7 +1265,7 @@ border-radius: 10px;
 .dropdown:hover .dropbtn {
     background-color: #3e418e; 
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.grid-container {
   display: grid;
@@ -1307,19 +1328,19 @@ border-radius: 10px;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+
+
+    background-color: #000000;
+
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    color: white;
+
+
+
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
@@ -1329,7 +1350,7 @@ border-radius: 10px;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e418e; 
+    background-color: #ffffff; 
 }
 
 }
@@ -1431,7 +1452,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 .shopclues:hover{
 	margin-top: 40px;
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.saving{
 	margin: 20px 0 20px 0px;
@@ -1582,7 +1603,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	background-color: ;
 
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.pcondition{
 	float: none;
@@ -1742,15 +1763,22 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
+
 
 }
 .ramannabook{
-	border: 1px solid #000000;
+
 	background: url(images/ramanna.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	margin: 10px auto 10px auto;
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 
 }
@@ -1762,10 +1790,13 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: none;
 	height: 400px;
 	margin: 10px 4.5% 40px 4.5%;
+	border-radius: 10px;
+
+
 
 }
 .ramannabook{
-	border: 1px solid #000000;
+
 	background: url(images/ramanna.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
@@ -1782,16 +1813,22 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 .grewal1book{
-	border: 1px solid #000000;
+
 	background: url(images/grewal2.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 
 }
@@ -1812,17 +1849,22 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 37% 40px 37%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 .malikbook{
-	border: 1px solid #000000;
+
 	background: url(images/malik.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -1842,16 +1884,21 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 .ssdarabook{
-	border: 1px solid #000000;
+
 	background: url(images/ssdara.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -1872,6 +1919,10 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 }
 
 @media (max-width: 500px)
@@ -1887,13 +1938,15 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .jainbook{
-	border: 1px solid #000000;
+
 	background: url(images/jain.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 
 }
@@ -1903,20 +1956,26 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 37% 40px 37%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 .shashibook{
-	border: 1px solid #000000;
+
 	background: url(images/shashi.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
-
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.shashi{
 	border: 1px solid #000000;
@@ -1934,19 +1993,25 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 .deltorobook{
-	border: 1px solid #000000;
+
 	background: url(images/deltoro.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	margin: 10px auto 10px auto;
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.deltoro{
 	border: 1px solid #000000;
@@ -1964,17 +2029,22 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 .mittalbook{
-	border: 1px solid #000000;
+
 	background: url(images/mittal.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -1995,16 +2065,21 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 .nagrathbook{
-	border: 1px solid #000000;
+
 	background: url(images/nagrath.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -2025,16 +2100,22 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 .jbguptabook{
-	border: 1px solid #000000;
+
 	background: url(images/jbgupta.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 
 }
@@ -2056,17 +2137,22 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 
 .creemabook{
-	border: 1px solid #000000;
+
 	background: url(images/creema.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -2087,17 +2173,24 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
+
 
 }
 .letuscbook{
-	border: 1px solid #000000;
+
 	background: url(images/letusc.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
-
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -2118,18 +2211,24 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 37% 40px 37%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
+
 
 }
 .cbalabook{
-	border: 1px solid #000000;
+
 	background: url(images/cbala.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
-
-
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 }
 @media (max-width: 500px)
 {
@@ -2149,17 +2248,22 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 
 .bcpunmiabook{
-	border: 1px solid #000000;
+
 	background: url(images/bcpunmia.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -2180,17 +2284,22 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 .rskhurmibook{
-	border: 1px solid #000000;
+
 	background: url(images/rskhurmi.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -2211,17 +2320,22 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 37% 40px 37%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 .kkdwivedibook{
-	border: 1px solid #000000;
+
 	background: url(images/kkdwivedi.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -2242,17 +2356,22 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 
 .rkrajputbook{
-	border: 1px solid #000000;
+
 	background: url(images/rkrajput.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -2273,6 +2392,10 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -2288,14 +2411,15 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }		
 
 .mmrathorebook{
-	border: 1px solid #000000;
+
 	background: url(images/mmrathore.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 .mathur{
@@ -2304,17 +2428,22 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 37% 40px 37%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 .mathurbook{
-	border: 1px solid #000000;
+
 	background: url(images/mathur.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -2335,17 +2464,22 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 
 .basantagbook{
-	border: 1px solid #000000;
+
 	background: url(images/basantag.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -2366,17 +2500,23 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 12% 40px 12%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
+
 
 }
 .ndbhattbook{
-	border: 1px solid #000000;
+
 	background: url(images/ndbhatt.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -2397,17 +2537,22 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: left;
 	height: 400px;
 	margin: 40px 37% 40px 37%;
+	border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+	border-radius: 10px;
 
 }
 .minakshiramanbook{
-	border: 1px solid #000000;
+
 	background: url(images/minakshiraman.jpg) center no-repeat; 
 	display: block;
 	height: 223px;
 	width: 180px;
 	text-indent: -99999px;
 	margin: 10px auto 10px auto;
-
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+	border-radius: 10px;
 
 }
 @media (max-width: 500px)
@@ -2423,10 +2568,55 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }		
 
 .price h1{
-	font-size: 36px;
+	font-size: 28px;
 	text-decoration: none;
 	font-family: sans-serif;
-	margin: 20px 10px 0 30px;
+	margin: 20px 0px 0 0px;
+	text-align: center;
+	font-family: Snell Roundhand, cursive;
+	color: hsl(158,30%,20%);
+}
+.price h2{
+	font-size: 24px;
+	margin: 10px 0px 0 0px;
+	text-align: center;
+	color: hsl(158,10%,50%);
+}
+.pm-button{
+
+	padding: 10px;
+	margin: 10px auto 10px auto;
+	width: 120px;
+	height: 25px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 7px;
+	background-color: hsl(158,30%,50%);
+	color: #ffffff;
+	box-shadow: 2px 2px 4px 2px hsl(158,40%,60%);
+	transition: 0.1s;
+
+
+}
+.pm-button:hover{
+	margin-top: 5px;
+	box-shadow: 4px 4px 10px 2px hsl(158,40%,60%);
+
+}
+.pm-button a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	margin: 10px auto 15px auto;
+	width: 120px;
+	height: 25px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 7px;
+	background-color: hsl(158,30%,50%);
+	color: #ffffff;
+	box-shadow: 2px 2px 4px 2px hsl(158,40%,60%);
+	transition: 0.1s;
 }
 .nav2 .dropbtn{
 width: 100px;
@@ -2434,7 +2624,7 @@ background-color: hsl(90,5%,80%);
 display: none;
 
 }
-@media (max-width: 500px)
+@media (max-width: 700px)
 {
 	.nav{
 		display: none;
