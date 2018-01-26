@@ -1856,15 +1856,15 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .malikbook{
-
-	background: url(images/malik.jpg) center no-repeat; 
-	display: block;
-	height: 223px;
-	width: 180px;
-	text-indent: -99999px;
-	margin: 10px auto 10px auto;
-	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
-	border-radius: 10px;
+	
+			background: url(images/malik.jpg) center no-repeat; 
+			display: block;
+			height: 223px;
+			width: 180px;
+			text-indent: -99999px;
+			margin: 10px auto 10px auto;
+			box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+			border-radius: 10px;
 
 }
 @media (max-width: 500px)
