@@ -606,7 +606,7 @@ h2{
 }
 .services{
 
-	border: 1px solid #000000;
+	/*border: 1px solid #000000;*/
 	margin: 10px;
 }
 .bb{
@@ -867,7 +867,7 @@ background: url(images/pcard1.jpg) no-repeat;
 	margin: 20px 0 20px 0px;
 
 
-	border: 1px solid #000000;
+	/*border: 1px solid #000000;*/
 
 }
 .st{
@@ -1380,7 +1380,7 @@ border-radius: 10px;
 	margin: 20px 0 20px 0px;
 
 
-	border: 1px solid #000000;
+	/*border: 1px solid #000000;*/
 
 }
 .amazon{
@@ -1480,7 +1480,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	margin: 20px 0 20px 0px;
 
 
-	border: 1px solid #000000;
+	/*border: 1px solid #000000;*/
 
 }
 .amazon{
