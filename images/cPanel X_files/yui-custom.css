@@ -1,0 +1,199 @@
+/* container.css */
+
+.overlay {
+    position:absolute;
+    display:block;
+}
+
+.tt {
+    visibility:hidden;
+    position:absolute;
+    color:#333;
+    background-color:#FDFFB4;
+    padding:2px;
+    border:1px solid #FCC90D;
+    width:auto;
+}
+
+* html body.masked select {
+    visibility:hidden;
+}
+
+* html div.panel-container select {
+    visibility:inherit;
+}
+
+* html div.drag select {
+    visibility:hidden;
+}
+
+* html div.hide-select select {
+    visibility:hidden;
+}
+
+.hide-scrollbars * {
+    overflow:hidden;
+}
+
+.hide-scrollbars textarea,
+.hide-scrollbars select {
+    overflow:hidden;
+    display:none;
+}
+
+.show-scrollbars textarea,
+.show-scrollbars select {
+    overflow:visible;
+}
+
+.button-group button {
+    position: relative;
+    vertical-align: top;
+    color: #333333;
+    text-align: center;
+    background: #EEEEEE;
+    border: 0;
+    border-width: 1px 1px 2px 1px ;
+    border-style: solid;
+    border-color: #BBBBBB;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #BBBBBB;
+    box-shadow: inset 0 -2px #BBBBBB;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin: 0 2px 0 0;
+    padding: 6px 12px;
+}
+
+.button-group button:hover,
+.button-group button.hover {
+    background: none;
+    color: #333333;
+    background-color: #d4d4d4;
+}
+
+.button-group button:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #d4d4d4;
+    border-color: #BBBBBB;
+}
+
+.button-group button[disabled],
+.button-group button[disabled]:hover,
+.button-group button[disabled]:active,
+.button-group button.disabled,
+.button-group button.disabled:hover,
+.button-group button.disabled:active {
+    cursor: not-allowed;
+    opacity: 0.65;
+    position: relative;
+    vertical-align: top;
+    top: 0;
+    color: #333333;
+    text-align: center;
+    background: #EEEEEE;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: #BBBBBB;
+    -webkit-box-shadow: inset 0 -2px #BBBBBB;
+    box-shadow: inset 0 -2px #BBBBBB;
+}
+
+#win {
+    visibility:hidden;
+}
+
+.yui-tt {
+    visibility:hidden;
+    position:absolute;
+    color:#333;
+    background-color:#FDFFB4;
+    padding:2px;
+    border:1px solid #FCC90D;
+    width:auto;
+}
+
+/* end container.css */
+
+/*  Status Widget Styles */
+#cpanel_status_widget {
+    -moz-box-shadow: 0 5px 10px #888;
+    -webkit-box-shadow: 0 5px 10px #888;
+    left: 50%;
+    margin: 0 0 0 -150px;
+    padding: 8px 10px;
+    position: fixed;
+    text-align: center;
+    top: 25px;
+    width: 300px;
+}
+
+.cpanel_status_error {
+    background: #FFBABA;
+    border: 1px solid #E3655A;
+}
+
+.cpanel_status_success {
+    background: #E8FCEA;
+    border: 1px solid #6DC462;
+}
+
+.cpanel_status_warning {
+    background: #F6E082;
+    border: 1px solid #6DC462;
+}
+
+.yui-panel {
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    outline: 0 none;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 6;
+
+}
+
+.yui-panel .hd {
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 16.4286px;
+    padding: 15px;
+}
+
+.yui-panel .bd {
+    min-height: 16.4286px;
+    padding: 10px;
+}
+
+.yui-panel .ft {
+    border-top: 1px solid #e5e5e5;
+    padding: 10px;
+    text-align: right;
+}
+
+.yui-panel .container-close {
+    position:absolute;
+    top: 14px;
+    right: 5px;
+    z-index: 6;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    visibility: inherit;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 0;
+}
+
+.yui-panel-container {
+    z-index: 6;
+}

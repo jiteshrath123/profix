@@ -1,0 +1,39 @@
+/* filemanager */
+.btn { border-radius: 0; }
+.btn-link { color: #3282e6 }
+.btn-default { color: #679b08; }
+.btn-primary { background-color: #679b08;  border-color: #578307; }
+.form-control { border-radius: 0; }
+
+#topnav {
+  background: #f7f7f7;
+}
+
+#btnSettings {
+  color: #fff;
+  background: #679b08;
+  border-color: #578307;
+  padding: 3px 15px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+.yui-skin-sam .yui-dt-scrollable .yui-dt-hd,
+.yui-skin-sam .yui-dt-scrollable .yui-dt-bd
+{ border-color: #ccc; }
+
+.yui-skin-sam .yui-dt table {
+    border-collapse: collapse;
+    *border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+/* file upload */
+body#leftMain .header #page-header {
+  margin-top: 0px;
+  font-size: 26px;
+  line-height: 60px;
+  vertical-align: middle;
+  padding-left: 20px;
+}

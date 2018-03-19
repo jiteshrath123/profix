@@ -1,0 +1,766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0228)https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/frontend/gl_paper_lantern/filemanager/upload-ajax.html?file=&fileop=&dir=%2Fhome%2Fe3igml0j8zdh%2Fpublic_html&dirop=&charset=&file_charset=&baseurl=&basedir= -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+            <link rel="stylesheet" type="text/css" href="./cPanel X_files/gl-filemanager-styles.css">
+
+        <title>cPanel X</title>
+        
+
+    <link rel="stylesheet" type="text/css" href="./cPanel X_files/yui-core.css">
+    <link rel="stylesheet" type="text/css" href="./cPanel X_files/yui-custom.css">
+    <link rel="stylesheet" type="text/css" href="./cPanel X_files/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="./cPanel X_files/open_sans.min.css">
+    <link rel="stylesheet" href="./cPanel X_files/files-min.css">
+<style type="text/css">
+#headbox {
+    border-bottom: 1px solid;
+    width: 98%;
+}
+</style>
+
+
+        <script type="text/javascript" src="./cPanel X_files/utilities_container.js.download"></script>
+        <script type="text/javascript" src="./cPanel X_files/cpanel-all-min.js.download"></script>
+
+        <script type="text/javascript">
+            var uploadkey = 'mawiXy6M4sQE5ySi';
+            var dir = "\/home\/e3igml0j8zdh\/public_html";
+        </script>
+
+        <script type="text/javascript" src="./cPanel X_files/filemanager_upload_optimized.js.download"></script>
+
+        <style type="text/css">
+            body .header {
+                text-align: left;
+                margin: 0;
+                background: #333333;
+                color: #FFFFFF;
+                width: 100%;
+                height: 60px;
+            }
+            #page-header {
+                color: #FFFFFF;
+            }
+
+            #uploadlimits b {
+                font-weight: bold;
+                font-size: 13px;
+            }
+
+            #uploadlimits td {
+                font-size: 13px;
+            }
+
+            #overWriteDlg .myButtonClass {
+                padding:3px; font-size:20px; width:100px;
+            }
+
+            #overWriteDlg .ok_button {
+                color:#2F2;
+            }
+
+            #overWriteDlg .cancel_button {
+                color:#F88;
+            }
+
+            #uploaders {
+                padding:0px;
+            }
+
+            .smtxt {
+                font-size: 11px;
+
+            }
+
+            .smtxt a {
+                font-size: 11px;
+                text-decoration: none;
+            }
+
+            .uploadtable {
+                font-size: 11px;
+            }
+
+            .progresstxt {
+                font-size: 11px;
+                padding: 0px;
+                text-align: left;
+            }
+
+            table.chmodtbl {
+                width: auto;
+                font-family: Verdana,Arial,sans-serif;
+                font-size: 11px;
+                border: 0;
+            }
+
+            table.chmodtbl input {
+                width: 40px;
+            }
+
+            div.chmod_filelist_container {
+                display: none;
+            }
+
+            #upload_queue {
+                width: 364px;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+            }
+
+            .progress-complete {
+                vertical-align: top;
+                border: 1px solid #444;
+                -moz-border-radius: 7px;
+                -webkit-border-radius: 7px;
+                border-radius: 7px;
+                overflow:hidden;
+                z-index: 2;
+            }
+
+            .progress-image {
+                padding: 0;
+                margin: 0;
+                font-size: 1px;
+                height: 15px;
+                background-image: url(/cPanel_magic_revision_1407781962/frontend/gl_paper_lantern/images/progress_bar.gif);
+            }
+
+            .uploader-status {
+                display: none;
+                margin: 5px;
+                padding: 7px;
+                background-color: #565656;
+                color: #eee;
+                border: 1px solid #aaa;
+                border-radius: 7px;
+                -moz-border-radius: 7px;
+            }
+
+            div.complete:hover,
+            div.complete *:hover {
+                background-color: #777;
+                cursor: pointer;
+            }
+
+            p {
+                margin-left: 12px;
+            }
+
+            .doc_container {
+                padding-left: 12px;
+            }
+
+            .upload-form {
+                margin: 0;
+            }
+
+            .code {
+                font-family: monospace;
+            }
+
+            #sdlg1 div.bd {
+                padding: 0 10px;
+            }
+        </style>
+
+        <!-- preload these -->
+        </head><body id="leftmain"><div class="mask" id="sdlg1_mask" style="z-index: 5; opacity: 0; height: 613px; width: 1366px; display: none;">&nbsp;</div><iframe id="_yuiResizeMonitor" title="Text Resize Monitor" tabindex="-1" role="presentation" style="position: absolute; visibility: visible; background-color: transparent; border-width: 0px; width: 2em; height: 2em; left: 0px; top: -29px;" src="./cPanel X_files/saved_resource.html"></iframe><img style="display:none" src="./cPanel X_files/progress_bar.gif">
+        <img id="progress_bar_done_prototype" style="display:none" src="./cPanel X_files/progress_bar_done.gif">
+
+        <!-- The ordering of the form elements here is very finicky;
+             for some reason, browsers don't like if a file input comes
+             immediately inside a <form>, for example. -->
+        <script type="text/plain" id="uploaderhtml_template">
+        <div class="uploadtable" style="clear:both">
+            <div id="uploadform{thisid_html}">
+                <iframe id="ut{thisid_html}" name="ut{thisid_html}" src="javascript:void(0)" style="width:0px;height:0px;border:0"></iframe>
+                <form name="uform{thisid_html}" id="frm{thisid_html}" class="upload-form" action="/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut{thisid_html}">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman" />
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles" />
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2" />
+                    <input type="hidden" name="getdiskinfo" value="1" />
+                    <input type="hidden" name="permissions" value="0644" />
+                    <input type="hidden" name="cpanel-trackupload" value="" />
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html" />
+                    <input type="hidden" name="overwrite" value="0" />
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file{thisid_html}" name="file{thisid_html}" />
+                </form>
+            </div>
+            <div id="uploaderstatus{thisid_html}" class="uploader-status" valign="middle">
+                <div id="progress-complete{thisid_html}" class="progress-complete">
+                    <div id="progress-image{thisid_html}" class="progress-image">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt{thisid_html}">Starting upload …</div>
+            </div>
+        </div>
+        </script>
+
+        <script type="text/plain" id="already_exists_template">
+            The file “<span class="code">{file_html}</span>” already exists on the server in the directory “<span class="code">{dir_html}</span>”. It was last modified on “{last_mod_html}”.
+            <br />Do you want to continue your upload and overwrite it?
+        </script>
+
+    
+    
+        <div class="header">
+            <h1 id="page-header">
+                File Upload
+            </h1>
+        </div>
+        <br><br><br>
+        <p>
+            <strong>Maximum file size allowed for upload:</strong>
+            <span class="status" id="file_upload_remain">29.99&nbsp;GB</span>
+        </p>
+
+        <div id="alertbox">
+        </div>
+
+        <div class="doc_container">
+            Please select files to upload to “<strong>/home/e3igml0j8zdh/public_html</strong>” <br>
+            <div id="uploaders"><div id="uploader0"><div class="uploadtable" style="clear:both">
+            <div id="uploadform0">
+                <iframe id="ut0" name="ut0" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(1).html"></iframe>
+                <form name="uform0" id="frm0" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut0" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi1124103">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file0" name="file0" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader1"><div class="uploadtable" style="clear:both">
+            <div id="uploadform1">
+                <iframe id="ut1" name="ut1" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(2).html"></iframe>
+                <form name="uform1" id="frm1" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut1" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi1559646">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file1" name="file1" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader2"><div class="uploadtable" style="clear:both">
+            <div id="uploadform2">
+                <iframe id="ut2" name="ut2" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(3).html"></iframe>
+                <form name="uform2" id="frm2" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut2" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi4490928">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="1">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file2" name="file2" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader3"><div class="uploadtable" style="clear:both">
+            <div id="uploadform3">
+                <iframe id="ut3" name="ut3" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(4).html"></iframe>
+                <form name="uform3" id="frm3" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut3" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi4775090">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file3" name="file3" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader4"><div class="uploadtable" style="clear:both">
+            <div id="uploadform4">
+                <iframe id="ut4" name="ut4" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(5).html"></iframe>
+                <form name="uform4" id="frm4" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut4" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file4" name="file4" disabled="">
+                </form>
+            </div>
+            <div id="uploaderstatus4" class="uploader-status" valign="middle">
+                <div id="progress-complete4" class="progress-complete">
+                    <div id="progress-image4" class="progress-image">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt4">Starting upload …</div>
+            </div>
+        </div></div><div id="uploader5"><div class="uploadtable" style="clear:both">
+            <div id="uploadform5">
+                <iframe id="ut5" name="ut5" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(6).html"></iframe>
+                <form name="uform5" id="frm5" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut5" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi6315364">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file5" name="file5" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader6"><div class="uploadtable" style="clear:both">
+            <div id="uploadform6">
+                <iframe id="ut6" name="ut6" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(7).html"></iframe>
+                <form name="uform6" id="frm6" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut6" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi9862483">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file6" name="file6" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader7"><div class="uploadtable" style="clear:both">
+            <div id="uploadform7">
+                <iframe id="ut7" name="ut7" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(8).html"></iframe>
+                <form name="uform7" id="frm7" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut7" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi1312774">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file7" name="file7" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader8"><div class="uploadtable" style="clear:both">
+            <div id="uploadform8">
+                <iframe id="ut8" name="ut8" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(9).html"></iframe>
+                <form name="uform8" id="frm8" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut8" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi8970996">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file8" name="file8" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader9"><div class="uploadtable" style="clear:both">
+            <div id="uploadform9">
+                <iframe id="ut9" name="ut9" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(10).html"></iframe>
+                <form name="uform9" id="frm9" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut9" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi6672846">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file9" name="file9" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader10"><div class="uploadtable" style="clear:both">
+            <div id="uploadform10">
+                <iframe id="ut10" name="ut10" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(11).html"></iframe>
+                <form name="uform10" id="frm10" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut10" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi5919878">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file10" name="file10" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader11"><div class="uploadtable" style="clear:both">
+            <div id="uploadform11">
+                <iframe id="ut11" name="ut11" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(12).html"></iframe>
+                <form name="uform11" id="frm11" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut11" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi2072422">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file11" name="file11" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader12"><div class="uploadtable" style="clear:both">
+            <div id="uploadform12">
+                <iframe id="ut12" name="ut12" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(13).html"></iframe>
+                <form name="uform12" id="frm12" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut12" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi9948365">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file12" name="file12" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader13"><div class="uploadtable" style="clear:both">
+            <div id="uploadform13">
+                <iframe id="ut13" name="ut13" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(14).html"></iframe>
+                <form name="uform13" id="frm13" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut13" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi265768">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file13" name="file13" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader14"><div class="uploadtable" style="clear:both">
+            <div id="uploadform14">
+                <iframe id="ut14" name="ut14" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(15).html"></iframe>
+                <form name="uform14" id="frm14" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut14" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi8035585">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file14" name="file14" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader15"><div class="uploadtable" style="clear:both">
+            <div id="uploadform15">
+                <iframe id="ut15" name="ut15" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(16).html"></iframe>
+                <form name="uform15" id="frm15" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut15" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi3849842">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file15" name="file15" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader16"><div class="uploadtable" style="clear:both">
+            <div id="uploadform16">
+                <iframe id="ut16" name="ut16" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(17).html"></iframe>
+                <form name="uform16" id="frm16" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut16" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi7095221">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file16" name="file16" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader17"><div class="uploadtable" style="clear:both">
+            <div id="uploadform17">
+                <iframe id="ut17" name="ut17" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(18).html"></iframe>
+                <form name="uform17" id="frm17" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut17" style="display: none;">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="mawiXy6M4sQE5ySi2240635">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file17" name="file17" disabled="">
+                </form>
+            </div>
+            
+        </div></div><div id="uploader18"><div class="uploadtable" style="clear:both">
+            <div id="uploadform18">
+                <iframe id="ut18" name="ut18" src="javascript:void(0)" style="width:0px;height:0px;border:0" src="./cPanel X_files/saved_resource(19).html"></iframe>
+                <form name="uform18" id="frm18" class="upload-form" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/json-api/cpanel" onsubmit="return false;" method="post" enctype="multipart/form-data" target="ut18">
+                    <input type="hidden" name="cpanel_jsonapi_module" value="Fileman">
+                    <input type="hidden" name="cpanel_jsonapi_func" value="uploadfiles">
+                    <input type="hidden" name="cpanel_jsonapi_apiversion" value="2">
+                    <input type="hidden" name="getdiskinfo" value="1">
+                    <input type="hidden" name="permissions" value="0644">
+                    <input type="hidden" name="cpanel-trackupload" value="">
+                    <input type="hidden" name="dir" value="/home/e3igml0j8zdh/public_html">
+                    <input type="hidden" name="overwrite" value="0">
+                    <input onchange="uploadfile(this);" size="60" type="file" id="file18" name="file18">
+                </form>
+            </div>
+            <div id="uploaderstatus18" class="uploader-status" valign="middle">
+                <div id="progress-complete18" class="progress-complete">
+                    <div id="progress-image18" class="progress-image">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt18">Starting upload …</div>
+            </div>
+        </div></div></div><!-- uploaders -->
+            <br><br>
+            <label>
+                Overwrite existing files:
+                <input id="overwrite_checkbox" type="checkbox" name="overwrite" value="1">
+            </label>
+
+            <br><br><br>
+            <script type="text/javascript">
+function calcperm() {
+        document.fmode.u.value = 0;
+        if (document.fmode.ur.checked) {
+                document.fmode.u.value = document.fmode.u.value * 1 + document.fmode.ur.value * 1;
+        }
+        if (document.fmode.uw.checked) {
+                document.fmode.u.value = document.fmode.u.value * 1 + document.fmode.uw.value * 1;
+        }
+        if (document.fmode.ux.checked) {
+                document.fmode.u.value = document.fmode.u.value * 1 + document.fmode.ux.value * 1;
+        }
+        document.fmode.g.value = 0;
+        if (document.fmode.gr.checked) {
+                document.fmode.g.value = document.fmode.g.value * 1 + document.fmode.gr.value * 1;
+        }
+        if (document.fmode.gw.checked) {
+                document.fmode.g.value = document.fmode.g.value * 1 + document.fmode.gw.value * 1;
+        }
+        if (document.fmode.gx.checked) {
+                document.fmode.g.value = document.fmode.g.value * 1 + document.fmode.gx.value * 1;
+        }
+        document.fmode.w.value = 0;
+        if (document.fmode.wr.checked) {
+                document.fmode.w.value = document.fmode.w.value * 1 + document.fmode.wr.value * 1;
+        }
+        if (document.fmode.ww.checked) {
+                document.fmode.w.value = document.fmode.w.value * 1 + document.fmode.ww.value * 1;
+        }
+        if (document.fmode.wx.checked) {
+                document.fmode.w.value = document.fmode.w.value * 1 + document.fmode.wx.value * 1;
+        }
+}
+</script>
+
+<style type="text/css">
+.chmodtbl td {
+    padding: auto 2px;
+    text-align: center;
+}
+.chmodtbl td.label {
+    padding: 0;
+    text-align: left;
+}
+</style>
+
+<form name="fmode" action="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/frontend/gl_paper_lantern/filemanager/changeperm.html">
+       <div class="chmod_filelist_container">File(s): <div id="chmod-filelist"></div> <input type="hidden" name="file" id="chmod-file"></div>
+       <table class="table table-stripped chmodtbl" id="chmodtbl">
+          <tbody><tr>
+    <td><b>Mode</b></td>
+    <td>User</td>
+    <td>Group</td>
+    <td>World</td>
+</tr>
+<tr>
+   <td>Read</td>
+
+   <td><input type="checkbox" name="ur" value="4" onclick="calcperm();"></td>
+   <td><input type="checkbox" name="gr" value="4" onclick="calcperm();"></td>
+   <td><input type="checkbox" name="wr" value="4" onclick="calcperm();"></td>
+</tr>
+<tr>
+    <td>Write</td>
+    <td><input type="checkbox" name="uw" value="2" onclick="calcperm();"></td>
+    <td><input type="checkbox" name="gw" value="2" onclick="calcperm();"></td>
+    <td><input type="checkbox" name="ww" value="2" onclick="calcperm();"></td>
+
+</tr>
+<tr>
+    <td>Execute</td>
+    <td><input type="checkbox" name="ux" value="1" onclick="calcperm();"></td>
+    <td><input type="checkbox" name="gx" value="1" onclick="calcperm();"></td>
+    <td><input type="checkbox" name="wx" value="1" onclick="calcperm();"></td>
+</tr>
+<tr>
+    <td>Permission</td>
+    <td><input type="text" class="form-control" name="u" readonly="readonly"></td>
+
+    <td><input type="text" class="form-control" name="g" readonly="readonly"></td>
+    <td><input type="text" class="form-control" name="w" readonly="readonly"></td>
+</tr>
+
+</tbody></table>
+       <br>
+       <input type="hidden" id="chmod-dir" name="dir" value="">
+    </form>
+
+
+        </div>
+
+        <div class="yui-panel-container yui-dialog yui-simple-dialog shadow yui-overlay-hidden" id="sdlg1_c" style="visibility: hidden; left: 458px; top: 237px; z-index: 6; opacity: 1;"><div id="sdlg1" class="yui-module yui-overlay yui-panel" style="visibility: inherit; width: 450px;"><input style="position: absolute; top: 1px; outline: 0px; margin: 0px; border: 0px; padding: 0px; height: 1px; width: 1px; z-index: -1; opacity: 0;"><a class="container-close" href="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/frontend/gl_paper_lantern/filemanager/upload-ajax.html?file=&amp;fileop=&amp;dir=%2Fhome%2Fe3igml0j8zdh%2Fpublic_html&amp;dirop=&amp;charset=&amp;file_charset=&amp;baseurl=&amp;basedir=#">Close</a><div class="hd" style="cursor: auto;"><div class="lt"></div><span>&nbsp;</span><div class="rt"></div></div>
+        <div class="bd">The file “<span class="code">BuyFirstComputer.html</span>” already exists on the server in the directory “<span class="code">/home/e3igml0j8zdh/public_html</span>”. It was last modified on “1/31/2018, 9:58:01 PM”.
+            <br>Do you want to continue your upload and overwrite it?<form name="frm_sdlg1"><input type="hidden" name="sdlg1" value=""></form></div><div class="ft"><span class="button-group"><button type="button" class="default">Yes</button><button type="button">No</button></span></div><input style="position: absolute; top: 1px; outline: 0px; margin: 0px; border: 0px; padding: 0px; height: 1px; width: 1px; z-index: -1; opacity: 0;"></div><div class="underlay"></div></div>
+
+        <br><br>
+
+        <script type="text/javascript">
+            var go_back_destination = "\/home\/e3igml0j8zdh\/public_html";
+            var LANG = {
+                click_to_close : "Click to close.",
+                yes: "Yes",
+                no:  "No"
+            };
+        </script>
+
+        <div style="text-align:center">
+            <a onclick="return gobacktodir(go_back_destination);" href="https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cpsess9969046262/frontend/gl_paper_lantern/filemanager/dir.html?dir=%2fhome%2fe3igml0j8zdh%2fpublic_html" id="backTo">
+                Back to /home/e3igml0j8zdh/public_html
+            </a>
+        </div>
+        <div id="upload_queue"><div id="uploaderstatus0" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete0" class="progress-complete">
+                    <div id="progress-image0" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt0">C:\fakepath\SellFirstCivil.html: 2.42 KB complete</div>
+            </div><div id="uploaderstatus1" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete1" class="progress-complete">
+                    <div id="progress-image1" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt1">C:\fakepath\SellFirstComputer.html: 2.42 KB complete</div>
+            </div><div id="uploaderstatus2" class="uploader-status complete" valign="middle" style="display: block;" title="Click to close.">
+                <div id="progress-complete2" class="progress-complete">
+                    <div id="progress-image2" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt2">C:\fakepath\SellFirstComputer.html: 2.42 KB complete</div>
+            </div><div id="uploaderstatus3" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete3" class="progress-complete">
+                    <div id="progress-image3" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt3">C:\fakepath\SellFirstElectrical.html: 2.58 KB complete</div>
+            </div><div id="uploaderstatus5" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete5" class="progress-complete">
+                    <div id="progress-image5" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt5">C:\fakepath\SellFirstEnglish.html: 2.08 KB complete</div>
+            </div><div id="uploaderstatus6" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete6" class="progress-complete">
+                    <div id="progress-image6" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt6">C:\fakepath\SellFirstGraphics.html: 2.24 KB complete</div>
+            </div><div id="uploaderstatus7" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete7" class="progress-complete">
+                    <div id="progress-image7" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt7">C:\fakepath\SellFirstMath1.html: 2.26 KB complete</div>
+            </div><div id="uploaderstatus8" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete8" class="progress-complete">
+                    <div id="progress-image8" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt8">C:\fakepath\SellFirstMath2.html: 2.26 KB complete</div>
+            </div><div id="uploaderstatus9" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete9" class="progress-complete">
+                    <div id="progress-image9" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt9">C:\fakepath\SellFirstMechanical.html: 2.41 KB complete</div>
+            </div><div id="uploaderstatus10" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete10" class="progress-complete">
+                    <div id="progress-image10" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt10">C:\fakepath\SellFirstPhysics.html: 2.05 KB complete</div>
+            </div><div id="uploaderstatus11" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete11" class="progress-complete">
+                    <div id="progress-image11" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt11">C:\fakepath\SellFirstYear.html: 2.69 KB complete</div>
+            </div><div id="uploaderstatus12" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete12" class="progress-complete">
+                    <div id="progress-image12" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt12">C:\fakepath\SellSecondYear.html: 7.34 KB complete</div>
+            </div><div id="uploaderstatus13" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete13" class="progress-complete">
+                    <div id="progress-image13" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt13">C:\fakepath\SellThirdYear.html: 7.34 KB complete</div>
+            </div><div id="uploaderstatus14" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete14" class="progress-complete">
+                    <div id="progress-image14" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt14">C:\fakepath\team.html: 1.46 KB complete</div>
+            </div><div id="uploaderstatus15" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete15" class="progress-complete">
+                    <div id="progress-image15" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt15">C:\fakepath\services.html: 2.28 KB complete</div>
+            </div><div id="uploaderstatus16" class="uploader-status complete" valign="middle" title="Click to close." style="display: block;">
+                <div id="progress-complete16" class="progress-complete">
+                    <div id="progress-image16" class="progress-image" style="background-image: url(&quot;https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/cPanel_magic_revision_1407781869/frontend/gl_paper_lantern/images/progress_bar_done.gif&quot;); width: 100%;">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt16">C:\fakepath\t&amp;c.html: 2.96 KB complete</div>
+            </div><div id="uploaderstatus17" class="uploader-status" valign="middle" style="display: block;">
+                <div id="progress-complete17" class="progress-complete">
+                    <div id="progress-image17" class="progress-image">&nbsp;
+                    </div>
+                </div>
+                <div class="progresstxt" id="progresstxt17">Starting upload …</div>
+            </div></div>
+
+    
+</body></html>

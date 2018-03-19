@@ -52,10 +52,10 @@
 
 		<div class="saving">
 			<div class="a">
-			<h2><a href="amazon.html" class="amazon">amazon</a></h2>
+			<h2><a href="amazon.pdf" class="amazon">amazon</a></h2>
 			</div>
 			<div class="f">
-			<h2><a href="flipkark.html" class="flipkart">flipkart</a></h2>
+			<h2><a href="flipkart.pdf" class="flipkart">flipkart</a></h2>
 			</div>
 			<div class="s">
 			<h2><a href="shopclues.html" class="shopclues">shopclues</a></h2>

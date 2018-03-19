@@ -39,8 +39,8 @@ ul{
 	height: 100%;
 }
 .main{
-	color: #000000;
-	border: 1px solid #000000;
+
+
 	width: 100%;
 
 }
@@ -139,66 +139,10 @@ h1{
 
 	}
 }
-.fnav{
-
-	width: 36%;
-	margin: 0 auto 0 auto;
-
-	font-family: lato,helvetica,verdana;
-	font-size: 15px;
-
-
-
-
-}
-.fnav li{
-	display: inline;
-
-}
-
-.fnav a{
-
-
-	color: #ffffff;
-	margin: 0px 4.666% 0px 4.666%;
-
-
-}
-@media (max-width: 700px)
-{
-	.fnav{
-
-	width: 120px;
-	margin: 0 76% 0 0;
-	float: right;
-	font-family: lato,helvetica,verdana;
-	font-size: 15px;
-
-	list-style: none;
-
-
-}
-.fnav li{
-	display: block;
-	margin: 20px 0 20px 0;
-
-
-}
-
-.fnav a{
-
-
-	color: #ffffff;
-	margin: 20px 0 20px 0;
-
-
-}
-
-}
 .main{
 	color: #000000;
 
-	border: 1px solid #000000;
+
 
 }
 
@@ -206,6 +150,7 @@ h1{
 	height: 450px;
 	border: 1px solid #000000;
 	background: url(images/nn.jpg);
+	background-color: hsl(158,30%,20%); 
 }
 .upper ul{
 
@@ -275,7 +220,7 @@ h1{
 {
 	.upper{
 	height: 350px;
-	border: 1px solid #000000;
+
 	background: url(images/nn.jpg);
 }
 	.upper h1{
@@ -339,7 +284,7 @@ h1{
 }
 .upper1{
 	height: 200px;
-	border: 1px solid #000000;
+
 	background: url(images/nn.jpg);
 }
 .upper1 h1{
@@ -382,7 +327,7 @@ h1{
 	.upper1{
 	height: 120px;
 	width: 100%;
-	border: 1px solid #000000;
+
 	background: url(images/nn.jpg);
 }
 .upper1 h1{
@@ -602,7 +547,7 @@ h2{
 }
 .services{
 
-	border: 1px solid #000000;
+	/*border: 1px solid #000000;*/
 	margin: 10px;
 }
 .bb{
@@ -611,7 +556,7 @@ h2{
 	margin: 60px 2.3% 0 2.3%;
 	float: left;
 	border-radius: 10px;
-	border: 1px solid hsl(158,30%,30%);
+
 	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	background-color: hsl(158,70%,93%);
 
@@ -644,7 +589,7 @@ h2{
 	margin: 60px 2.3% 0 2.3%;
 	float: left;
 	border-radius: 10px;
-	border: 1px solid hsl(158,30%,30%);
+
 	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	background-color: hsl(158,70%,93%);
 }
@@ -653,7 +598,7 @@ h2{
 .sellbooks{
 	width: 200px;
 	height: 230px;
-	border: 1px solid #000000;
+
 	background: url(images/sell.jpg) top no-repeat;
 
 	display: block;
@@ -675,15 +620,13 @@ h2{
 	margin: 60px 2.3% 0 2.3%;
 	float: left;
 	border-radius: 10px;
-	border: 1px solid hsl(158,30%,30%);
+
 	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	background-color: hsl(158,40%,40%);
 }
-
 .attach{
 	width: 200px;
 	height: 230px;
-	border: 1px solid #000000;
 	background: url(images/attach.jpg) left no-repeat;
 	display: block;
 	float: left;
@@ -691,7 +634,7 @@ h2{
 	margin: 10px;
 	transition: all 0.5s 0.2s;
 	border-radius: 10px;
-	border: 1px solid hsl(158,70%,93%);
+
 	box-shadow: 2px 2px 10px 4px hsl(158,70%,93%);
 
 
@@ -705,7 +648,7 @@ h2{
 	margin: 60px 2.3% 0 2.3%;
 	float: left;
 	border-radius: 10px;
-	border: 1px solid hsl(158,30%,30%);
+
 	background-color: hsl(158,40%,40%);
 	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
@@ -713,7 +656,7 @@ h2{
 .profixcard{
 	width: 200px;
 	height: 230px;
-	border: 1px solid #000000;
+
 	background: url(images/pcard.jpg)  no-repeat;
 	display: block;
 	float: left;
@@ -721,7 +664,7 @@ h2{
 	margin: 10px;
 	transition: all 0.5s 0.2s;
 	border-radius: 10px;
-	border: 1px solid hsl(158,70%,93%);
+
 	box-shadow: 2px 2px 10px 4px hsl(158,70%,93%);
 }
 .profixcard:hover{
@@ -729,7 +672,9 @@ h2{
 }
 .services a{
 	font-size: 24px;
-	font-family: lato,helvetica,verdana;
+	font-family: Impact, fantasy;
+	text-decoration: none;
+	color: hsl(158,20%,30%);;
 
 }
 @media (max-width: 700px)
@@ -750,7 +695,7 @@ h2{
 .buybooks{
 	width: 120px;
 	height: 140px;
-	border: 1px solid #000000;
+
 	background: url(images/buy1.jpg) left no-repeat;
 
 	display: block;
@@ -772,14 +717,13 @@ h2{
 
 	float: none;
 	border-radius: 10px;
-	border: 1px solid hsl(158,30%,30%);
+
 	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	background-color: hsl(158,40%,40%);
 }
 .sellbooks{
 	width: 120px;
 	height: 140px;
-	border: 1px solid #000000;
 	background: url(images/sell1.jpg) top no-repeat;
 
 	display: block;
@@ -789,7 +733,7 @@ h2{
 
 	transition: all 0.01s 0.2s;
 	border-radius: 10px;
-	border: 1px solid hsl(158,70%,93%);
+
 	box-shadow: 2px 2px 10px 4px hsl(158,70%,93%);
 
 }
@@ -803,7 +747,7 @@ h2{
 
 	float: none;
 	border-radius: 10px;
-	border: 1px solid hsl(158,30%,30%);
+
 	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	background-color: hsl(158,70%,93%);
 }
@@ -811,7 +755,7 @@ h2{
 .attach{
 	width: 120px;
 	height: 140px;
-	border: 1px solid #000000;
+
 	background: url(images/attach1.jpg) left no-repeat;
 	display: block;
 	float: left;
@@ -838,7 +782,7 @@ h2{
 .profixcard{
 	width: 120px;
 	height: 140px;
-	border: 1px solid #000000;
+
 	border-radius: 10px;
 	box-shadow: 2px 2px 5px 2px hsl(158,40%,40%);
 background: url(images/pcard1.jpg) no-repeat;
@@ -854,7 +798,7 @@ background: url(images/pcard1.jpg) no-repeat;
 }
 .services a{
 	font-size: 15px;
-	font-family: lato,helvetica,verdana;
+
 
 }
 
@@ -863,7 +807,7 @@ background: url(images/pcard1.jpg) no-repeat;
 	margin: 20px 0 20px 0px;
 
 
-	border: 1px solid #000000;
+	/*border: 1px solid #000000;*/
 
 }
 .st{
@@ -940,7 +884,7 @@ width: 300px;
 float: left;
 height: 300px;
 margin: 20px 200px 40px 100px;
-border: 1px solid #000000;
+
 border-radius: 10px;
 
 border: 1px solid hsl(158,30%,30%);
@@ -953,7 +897,6 @@ width: 300px;
 float: left;
 height: 300px;
 margin: 40px 100px 20px 270px;
-border: 1px solid #000000;
 border-radius: 10px;
 
 border: 1px solid hsl(158,30%,30%);
@@ -980,7 +923,6 @@ border: 1px solid hsl(158,30%,30%);
 	float: left;
 	height: 300px;
 	margin: 40px 200px 20px 100px;
-	border: 1px solid #000000;
 	border-radius: 10px;
 	border: 1px solid hsl(158,30%,30%);
 	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
@@ -1152,8 +1094,8 @@ border-radius: 10px;
 @media (max-width: 700px)
 {
 	.media{
-		float: left;
-		margin-left: 10px;
+		float: ;
+		margin-left: 0px;
 	}
 }
 
@@ -1169,8 +1111,83 @@ border-radius: 10px;
 {
 
 }
+.y{
+
+width: 30%;
+float: left;
+height: 300px;
+margin: 20px 9.8% 40px 9.8%;
+
+border-radius: 10px;
+
+border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+}
+.yes{
+
+	background: url(images/yes.jpg) center no-repeat;
+	display: block;
+	height: 200px;
+	width: 300px;
+	text-indent: -99999px;
+	margin: 50px auto 50px auto;
+	border-radius: 10px;
+
+	transition: all 0.1s;
+
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+}
+.yes:hover{
+	margin-top: 40px;
+}
+.def{
+
+width: 30%;
+float: left;
+height: 300px;
+margin: 20px 9.8% 40px 9.8%;
+
+border-radius: 10px;
+
+border: 1px solid hsl(158,30%,30%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	background-color: hsl(158,70%,93%);
+}
+.defuse{
+
+	background: url(images/defuse.jpg) center no-repeat;
+	display: block;
+	height: 200px;
+	width: 300px;
+	text-indent: -99999px;
+	margin: 50px auto 50px auto;
+	border-radius: 10px;
+
+	transition: all 0.1s;
+
+	box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
+}
+.defuse:hover{
+	margin-top: 40px;
+}
+
+@media (max-width: 700px)
+{
+	.y{
+		width: 90%;
+		margin: 10px 4.5% 10px 4.5%;
+
+	}
+	.def{
+		width: 90%;
+		margin: 10px 4.5% 10px 4.5%;
+
+	}
+}
+
 .footer{
-	border: 1px solid #000000;
+
 	height: 200px;
 	background-color: hsl(158,45%,15%);
 
@@ -1182,7 +1199,7 @@ border-radius: 10px;
 @media (max-width: 700px)
 {
 	.footer{
-	border: 1px solid #000000;
+
 	height: 300px;
 	background-color: hsl(158,45%,15%);
 
@@ -1218,7 +1235,6 @@ border-radius: 10px;
 	font-weight: bolder;
 	margin: 10px;
 	height: 200px;
-	border: 1px solid #000000;
 	background: url(images/upper1.jpg);
 }
 
@@ -1253,31 +1269,54 @@ border-radius: 10px;
 
 }
 
+.nav2 .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: hsl(158,30%,20%);
+    width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0.8;
+    text-align: center;
+
+}
+.nav2 a{
+	border: 1px solid #000000;
+	margin: 10px;
+	padding-bottom: 40px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: hsl(158,30%,80%);
+	font-family: Jazz LET, fantasy; 
+
+
+}
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000000;
-    width: 400px;
+    background-color: #ffffff;
+    width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     opacity: 0.7;
-}
+    }
 
 .dropdown-content a {
     color: black;
     padding: 20px 0px 12px 0px;
     text-decoration: none;
     display: block;
+
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #000000}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e418e;
+    background-color: hsl(158,30%,40%);
 }
 @media (max-width: 700px)
 {
@@ -1305,7 +1344,7 @@ border-radius: 10px;
 	font-weight: bolder;
 	margin: 10px;
 	height: 200px;
-	border: 1px solid #000000;
+
 	background: url(images/upper1.jpg);
 }
 
@@ -1351,7 +1390,7 @@ border-radius: 10px;
 }
 
 .dropdown-content a {
-    color: white;
+    color: hsl(158,20%,35%);
 
 
 
@@ -1365,9 +1404,9 @@ border-radius: 10px;
 
 .dropdown:hover .dropbtn {
 <<<<<<< HEAD
-    background-color: #ffffff; 
+    background-color: hsl(158,25%,30%); 
 =======
-    background-color: #3e418e;
+    background-color: hsl(158,25%,30%);
 >>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 }
 
@@ -1376,7 +1415,7 @@ border-radius: 10px;
 	margin: 20px 0 20px 0px;
 
 
-	border: 1px solid #000000;
+	/*border: 1px solid #000000;*/
 
 }
 .amazon{
@@ -1387,7 +1426,7 @@ border-radius: 10px;
 	text-indent: -99999px;
 	margin: 50px auto 50px auto;
 	border-radius: 100px;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
 
 	border: 1px solid hsl(158,40%,40%);
@@ -1402,7 +1441,7 @@ border-radius: 10px;
 	text-indent: -99999px;
 	border-radius: 100px;
 	margin: 50px auto 50px auto;
-	border: 1px solid #000000;
+
 	transition: all 0.1s;
 
 	border: 1px solid hsl(158,40%,40%);
@@ -1442,7 +1481,6 @@ width: 400px;
 float: left;
 height: 350px;
 margin: 10px 50px 10px 150px;
-border: 1px solid #000000;
 border-radius: 10px;
 background-color: white;
 border: 1px solid hsl(158,30%,30%);
@@ -1476,7 +1514,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	margin: 20px 0 20px 0px;
 
 
-	border: 1px solid #000000;
+	/*border: 1px solid #000000;*/
 
 }
 .amazon{
@@ -1523,7 +1561,7 @@ width: 330px;
 float: none;
 height: 270px;
 margin: 10px auto 10px auto;
-border: 1px solid #000000;
+
 border-radius: 10px;
 
 }
@@ -1535,7 +1573,6 @@ width: 330px;
 float: none;
 height: 270px;
 margin: 10px auto 10px auto;
-border: 1px solid #000000;
 border-radius: 10px;
 
 }
@@ -1547,7 +1584,6 @@ width: 330px;
 float: none;
 height: 270px;
 margin: 10px auto 10px auto;
-border: 1px solid #000000;
 border-radius: 10px;
 background-color: white;
 box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
@@ -1569,9 +1605,10 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	margin: 10px 2.3% 10px 2.3%;
 	width: 45%;
 	height: 600px;
-	border: 1px solid #000000;
 	border-radius: 10px;
-	background-color: white;
+	background-color: hsl(158,70%,95%);
+		box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+		border: 1px solid hsl(158,30%,45%);
 
 }
 
@@ -1581,37 +1618,26 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	margin: 10px 2.3% 10px 2.3%;
 	width: 45%;
 	height: 600px;
-	border: 1px solid #000000;
 	border-radius: 10px;
-	background-color: white;
-
+	background-color: hsl(158,70%,95%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	border: 1px solid hsl(158,30%,45%);
 }
 .tc h1{
-	font-size: 0px;
+	font-size: 30px;
 	text-align: center;
 	text-decoration: none;
 }
-.tc li:nth-child(even)
+.tc li
 {
 	font-family: Arial Narrow, sans-serif;
 	font-size: 18px;
 	margin: 15px 10px 15px 10px;
-	border: 1px solid #000000;
 	padding: 10px 0px 10px 10px;
 	border-radius: 5px;
-	background-color: hsl(158,40%,40%);
+	background-color: hsl(158,40%,75%);
 	height: 35px;
-
-}.tc li:nth-child(odd){
-	font-family: Arial Narrow, sans-serif;
-	font-size: 18px;
-	margin: 15px 10px 15px 10px;
-	border: 1px solid #000000;
-	padding: 10px 0px 10px 10px;
-	border-radius: 5px;
-	background-color: hsl(158,70%,93%);
-	height: 35px;
-
+	color: hsl(158,40%,25%);
 
 }
 .tc ol li:before{
@@ -1634,9 +1660,9 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	margin: 10px auto 10px auto;
 	width: 95%;
 	height: 450px;
-	border: 1px solid #000000;
+
 	border-radius: 10px;
-	background-color: white;
+
 	font-size: 15px;
 
 }
@@ -1645,9 +1671,9 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	margin: 10px auto 10px auto;
 	width: 95%;
 	height: 600px;
-	border: 1px solid #000000;
+
 	border-radius: 10px;
-	background-color: white;
+
 
 
 }
@@ -1655,30 +1681,18 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	font-size: 30px;
 	text-align: center;
 }
-.tc li:nth-child(even){
+.tc li{
 	font-family: Arial Narrow, sans-serif;
 	font-size: 15px;
 	margin: 15px 15px 15px 0px;
-	border: 1px solid #000000;
+
 	padding: 5px 0px 10px 10px;
 	border-radius: 5px;
-	background-color: hsl(158,40%,40%);
+
 	height: 40px;
-	color: hsl(158,70%,93%);
 
 
 
-
-}
-.tc li:nth-child(odd){
-	font-family: Arial Narrow, sans-serif;
-	font-size: 15px;
-	margin: 15px 15px 15px 0px;
-	border: 1px solid #000000;
-	padding: 5px 0px 10px 10px;
-	border-radius: 5px;
-	background-color: hsl(158,70%,93%);
-	height: 40px;
 
 
 }
@@ -1696,7 +1710,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	border: 1px solid hsl(158,30%,45%);
 	border-radius: 10px;
 	background-color: hsl(158,30%,95%);
-	box-shadow: 2px 2px 5px 2px;
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 
 }
@@ -1709,7 +1723,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	border: 1px solid hsl(158,30%,45%);
 	border-radius: 10px;
 	background-color: hsl(158,30%,95%);
-	box-shadow: 2px 2px 5px 2px;
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .sem h1{
@@ -1744,7 +1758,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	margin: 10px auto 10px auto;
 	width: 95%;
 
-	border: 1px solid #000000;
+
 	border-radius: 10px;
 	padding-bottom: 20px;
 
@@ -1755,8 +1769,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	float: none;
 	margin: 10px auto 10px auto;
 	width: 95%;
-
-	border: 1px solid #000000;
 	border-radius: 10px;
 	padding-bottom: 20px;
 
@@ -1795,13 +1807,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .ramannabook{
-<<<<<<< HEAD
 
 	background: url(images/ramanna.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/ramanna.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -1814,7 +1821,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.ramanna{
-	border: 1px solid #000000;
+
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -1825,13 +1832,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .ramannabook{
-<<<<<<< HEAD
 
 	background: url(images/ramanna.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/ramanna.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -1854,13 +1856,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .grewal1book{
-<<<<<<< HEAD
 
 	background: url(images/grewal2.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/grewal2.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -1874,7 +1871,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.grewal1{
-	border: 1px solid #000000;
+
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -1883,7 +1880,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 }
 .malik{
-	border: 1px solid #000000;
+
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -1895,7 +1892,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .malikbook{
-<<<<<<< HEAD
+
 	
 			background: url(images/malik.jpg) center no-repeat; 
 			display: block;
@@ -1905,22 +1902,14 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 			margin: 10px auto 10px auto;
 			box-shadow: 2px 2px 10px 10px hsl(158,40%,40%);
 			border-radius: 10px;
-=======
-	border: 1px solid #000000;
-	background: url(images/malik.jpg) center no-repeat;
-	display: block;
-	height: 223px;
-	width: 180px;
-	text-indent: -99999px;
-	margin: 10px auto 10px auto;
 
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
+
 
 }
 @media (max-width: 500px)
 {
 	.malik{
-	border: 1px solid #000000;
+
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -1941,13 +1930,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .ssdarabook{
-<<<<<<< HEAD
 
 	background: url(images/ssdara.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/ssdara.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -1959,7 +1943,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.ssdara{
-	border: 1px solid #000000;
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -1969,7 +1952,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .jain{
-	border: 1px solid #000000;
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -1983,7 +1965,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.jain{
-	border: 1px solid #000000;
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -1993,13 +1974,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .jainbook{
-<<<<<<< HEAD
-
 	background: url(images/jain.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/jain.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2011,11 +1986,10 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .shashi{
-	border: 1px solid #000000;
 	width: 25%;
 	float: left;
 	height: 400px;
-	margin: 40px 37% 40px 37%;
+	margin: 40px 12% 40px 12%;
 	border: 1px solid hsl(158,30%,30%);
 	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	background-color: hsl(158,70%,93%);
@@ -2023,13 +1997,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .shashibook{
-<<<<<<< HEAD
-
 	background: url(images/shashi.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/shashi.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2043,7 +2011,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 700px)
 {
 	.shashi{
-	border: 1px solid #000000;
+
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2053,7 +2021,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .deltoro{
-	border: 1px solid #000000;
+
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -2065,13 +2033,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .deltorobook{
-<<<<<<< HEAD
-
 	background: url(images/deltoro.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/deltoro.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2084,7 +2046,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 700px)
 {
 	.deltoro{
-	border: 1px solid #000000;
+
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2094,7 +2056,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .mittal{
-	border: 1px solid #000000;
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -2125,7 +2086,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.mittal{
-	border: 1px solid #000000;
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2135,7 +2095,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .nagrath{
-	border: 1px solid #000000;
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -2147,13 +2106,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .nagrathbook{
-<<<<<<< HEAD
 
 	background: url(images/nagrath.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/nagrath.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2165,7 +2119,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.nagrath{
-	border: 1px solid #000000;
+
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2175,7 +2129,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .jbgupta{
-	border: 1px solid #000000;
+
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -2187,13 +2141,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .jbguptabook{
-<<<<<<< HEAD
 
 	background: url(images/jbgupta.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/jbgupta.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2207,7 +2156,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.jbgupta{
-	border: 1px solid #000000;
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2217,7 +2165,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .creema{
-	border: 1px solid #000000;
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -2230,13 +2177,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .creemabook{
-<<<<<<< HEAD
 
 	background: url(images/creema.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/creema.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2248,7 +2190,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.creema{
-	border: 1px solid #000000;
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2258,7 +2199,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .letusc{
-	border: 1px solid #000000;
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -2271,13 +2211,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .letuscbook{
-<<<<<<< HEAD
 
 	background: url(images/letusc.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/letusc.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2291,7 +2226,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.letusc{
-	border: 1px solid #000000;
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2301,7 +2235,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .cbala{
-	border: 1px solid #000000;
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -2314,13 +2247,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .cbalabook{
-<<<<<<< HEAD
 
 	background: url(images/cbala.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/cbala.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2333,7 +2261,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.cbala{
-	border: 1px solid #000000;
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2343,7 +2270,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .bcpunmia{
-	border: 1px solid #000000;
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -2356,13 +2282,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .bcpunmiabook{
-<<<<<<< HEAD
-
 	background: url(images/bcpunmia.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/bcpunmia.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2374,7 +2294,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.bcpunmia{
-	border: 1px solid #000000;
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2384,7 +2303,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .rskhurmi{
-	border: 1px solid #000000;
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -2396,13 +2314,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .rskhurmibook{
-<<<<<<< HEAD
 
 	background: url(images/rskhurmi.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/rskhurmi.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2437,13 +2350,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .kkdwivedibook{
-<<<<<<< HEAD
 
 	background: url(images/kkdwivedi.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/kkdwivedi.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2456,7 +2364,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.kkdwivedi{
-	border: 1px solid #000000;
+
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2466,7 +2374,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .rkrajput{
-	border: 1px solid #000000;
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -2479,13 +2386,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .rkrajputbook{
-<<<<<<< HEAD
 
 	background: url(images/rkrajput.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/rkrajput.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2531,13 +2433,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .mmrathorebook{
-<<<<<<< HEAD
 
 	background: url(images/mmrathore.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/mmrathore.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2560,13 +2457,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .mathurbook{
-<<<<<<< HEAD
 
 	background: url(images/mathur.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/mathur.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2579,7 +2471,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.mathur{
-	border: 1px solid #000000;
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2589,7 +2480,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .basantag{
-	border: 1px solid #000000;
+
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -2602,13 +2493,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .basantagbook{
-<<<<<<< HEAD
 
 	background: url(images/basantag.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/basantag.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2620,7 +2506,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.basantag{
-	border: 1px solid #000000;
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2630,7 +2515,7 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .ndbhatt{
-	border: 1px solid #000000;
+
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -2643,13 +2528,8 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .ndbhattbook{
-<<<<<<< HEAD
 
 	background: url(images/ndbhatt.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/ndbhatt.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2662,7 +2542,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.ndbhatt{
-	border: 1px solid #000000;
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2672,7 +2551,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 }
 
 .minakshiraman{
-	border: 1px solid #000000;
 	width: 25%;
 	float: left;
 	height: 400px;
@@ -2684,13 +2562,9 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 
 }
 .minakshiramanbook{
-<<<<<<< HEAD
+
 
 	background: url(images/minakshiraman.jpg) center no-repeat; 
-=======
-	border: 1px solid #000000;
-	background: url(images/minakshiraman.jpg) center no-repeat;
->>>>>>> 26fe86be3d09632393f9e684da9764d61853d6ae
 	display: block;
 	height: 223px;
 	width: 180px;
@@ -2703,7 +2577,6 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 @media (max-width: 500px)
 {
 	.minakshiraman{
-	border: 1px solid #000000;
 	width: 90%;
 	float: none;
 	height: 400px;
@@ -2763,6 +2636,34 @@ box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
 	box-shadow: 2px 2px 4px 2px hsl(158,40%,60%);
 	transition: 0.1s;
 }
+.oos{
+	background-color: hsl(158,20%,20%);
+	font-size: 20px;
+	font-family: Impact, fantasy;
+	padding: 10px;
+	width: 40%;
+	text-align: center;
+	margin: 5px;
+	float: left;
+	color: hsl(158,30%,80%)
+}
+.notify{
+	width: 40%;
+	padding: 10px;
+	margin: 5px;
+	font-size: 20px;
+	text-align: center;
+	font-family: Impact, fantasy;
+	float: right;
+	background-color: hsl(158,30%,50%);
+	color: hsl(158,20%,10%);
+	text-decoration: none;
+	transition: 0.1s all; 
+
+}
+.notify:hover{
+	margin-top: 2px;
+}
 .nav2 .dropbtn{
 width: 100px;
 background-color: hsl(90,5%,80%);
@@ -2799,22 +2700,28 @@ display: block;
 }
 }
 .review{
-	margin: 10px 2.3% 10px 2.3%;
+	margin: 10px 1.5% 10px 1.5%;
 	float: left;
 	width: 45%; 
+	border: 1px solid hsl(158,30%,45%);
+	border-radius: 10px;
+	background-color: hsl(158,30%,95%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	padding: 10px;
+	height: 800px;
 }
 iframe{
 	width: 100%;
-	height: 800px;
+	height: 600px;
 	margin-top: 10px;
 }
 .review h2{;
 	text-decoration: none;
 
-	font-size: 55px;
+	font-size: 45px;
 	color: hsl(158,30%,20%);
-	font-weight: -1000
-	margin: 20px;
+	margin: 20px;	
+
  	text-align: center;
  	font-family: Courier New, monospace; 
 }
@@ -2822,6 +2729,181 @@ iframe{
 	float: left;
 	width: 45%;
 	height: 800px;
-	border: 1px solid #000000;
-	margin: 2.3%;
+
+	margin: 10px 1.5% 10px 1.5%;
+	border: 1px solid hsl(158,30%,45%);
+	border-radius: 10px;
+	background-color: hsl(158,30%,95%);
+	box-shadow: 2px 2px 5px 2px hsl(158,30%,30%);
+	padding: 10px;
+}
+.details h1{;
+	text-decoration: none;
+
+	font-size: 40px;
+	color: hsl(158,30%,20%);
+
+	margin: 20px 20px 50px;
+ 	text-align: center;
+ 	font-family: Courier New, monospace; 
+}
+.details h2{
+	font-size: 30px;
+	margin: 10px;
+	text-align: center;
+	color: hsl(158,10%,50%);
+
+
+}
+.details h3{
+	text-decoration: none;
+
+	font-size: 40px;
+	color: hsl(158,30%,20%);
+
+	margin: 50px 20px 20px 20px;
+ 	text-align: center;
+ 	font-family: Courier New, monospace; 
+}
+.details p{
+	font-size: 22px;
+	color: hsl(158,30%,40%);
+	font-weight: bold;
+
+	margin: 0px 20px 20px 20px;
+ 	text-align: center;
+ 	font-family: Arial Narrow, sans-serif;
+}
+@media (max-width: 700px)
+{
+	.review{
+	margin: 5px auto 10px auto;
+	float: none;
+	width: 90%;
+	height: 800px;
+
+}
+iframe{
+	width: 100%;
+	height: 600px;
+	margin-top: 5px;
+}
+.review h2{;
+	text-decoration: none;
+	margin: 0;
+	font-size: 30px;
+	color: hsl(158,30%,20%);
+	
+
+ 	text-align: center;
+ 	font-family: Courier New, monospace; 
+}
+.details{
+	float: none;
+	width: 90%;
+	height: 600px;
+
+	margin: 5px auto 10px auto;
+}
+.details h1{;
+	text-decoration: none;
+
+	font-size: 25px;
+	color: hsl(158,30%,20%);
+
+	margin: 10px auto 30px auto;
+
+ 	font-family: Courier New, monospace; 
+}
+.details h3{
+	text-decoration: none;
+
+	font-size: 25px;
+	color: hsl(158,30%,20%);
+
+	margin: 30px 5px 5px 20px;
+ 	text-align: center;
+ 	font-family: Courier New, monospace; 
+}
+
+
+}
+.stalwart{
+	width: 250px;
+	height: 150px;
+	float: right;
+	margin-right: 20px;
+
+	background-image: url(images/stalwart.jpg);
+}
+@media (max-width: 700px)
+{
+.stalwart{
+	width: 200px;
+	height: 130px;
+	float: left;
+	margin-right: 5px;
+	margin-top: 10px;
+	background-image: url(images/stalwart1.jpg);
+
+}
+}
+
+
+.fnav{
+
+	width: 36%;
+	margin: 0 auto 0 auto;
+
+	font-family: lato,helvetica,verdana;
+	font-size: 15px;
+
+
+
+
+}
+.fnav li{
+	display: inline;
+
+}
+
+.fnav a{
+
+
+	color: #ffffff;
+	margin: 0px 4.666% 0px 4.666%;
+
+
+}
+@media (max-width: 700px)
+{
+	.fnav{
+
+	width: 120px;
+	margin: 0 5% 0 0;
+
+    float: left;
+	font-family: lato,helvetica,verdana;
+	font-size: 15px;
+
+	list-style: none;
+
+
+}
+.fnav li{
+	display: block;
+	margin: 20px 0 20px 0;
+
+
+}
+
+.fnav a{
+
+
+	color: #ffffff;
+	margin: 20px 0 20px 0;
+
+
+}
+
 }
